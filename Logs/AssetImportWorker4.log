@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.6f1 (0b051c2e5d54) revision 722204'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 16023 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple" at "2026-05-13T14:44:22.3510976Z"
+OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 63062 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54" at "2026-05-13T08:40:09.8431352Z"
 Process architecture: x64
-Date: 2026-05-13T08:40:09Z
+Date: 2026-05-13T14:44:22Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
@@ -15,24 +15,24 @@ C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
 -name
 AssetImportWorker4
 -projectPath
-C:/Users/woo54/ShiftRunner/ProjectRunner
+C:/GitProject1
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-55277
+58561
 -licensingIpc
-LicenseClient-woo54
+LicenseClient-apple
 -force-d3d12
 -job-worker-count
-3
+15
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/woo54/ShiftRunner/ProjectRunner
-C:/Users/woo54/ShiftRunner/ProjectRunner
+Successfully changed project path to: C:/GitProject1
+C:/GitProject1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -68,13 +68,13 @@ C:/Users/woo54/ShiftRunner/ProjectRunner
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [39716]  Target information:
+Player connection [45124]  Target information:
 
-Player connection [39716]  * "[IP] 172.16.30.236 [Port] 0 [Flags] 2 [Guid] 2083888572 [EditorId] 2083888572 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6SJNF32) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [45124]  * "[IP] 192.168.45.63 [Port] 0 [Flags] 2 [Guid] 3387225161 [EditorId] 3387225161 [Version] 1048832 [Id] WindowsEditor(7,Áö½ÃÇö) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [39716] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [39716] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [45124] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45124] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -85,22 +85,23 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 48.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.48 ms, found 4 plugins.
 Initialize engine version: 6000.4.6f1 (0b051c2e5d54)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/woo54/ShiftRunner/ProjectRunner/Assets
+[Subsystems] Discovering subsystems at path C:/GitProject1/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
-    Version:         Direct3D 12 [level 12.1]
-    Renderer:        Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:          Intel
-    VRAM:            8011 MB
-    App VRAM Budget: 7355 MB
-    Driver:          30.0.100.9864
-    Unified Memory Architecture
-    Cache Coherent UMA
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5080 (ID=0x2c02)
+    Vendor:          NVIDIA
+    VRAM:            15977 MB
+    App VRAM Budget: 15209 MB
+    Driver:          32.0.15.9186
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
@@ -109,58 +110,58 @@ Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,susp
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015186 seconds.
+Registered in 0.002790 seconds.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-apple"
+[Licensing::IpcConnector] LicenseClient-apple channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple-6000.4.6" at "2026-05-13T14:44:23.4657126Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 41328, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              36b9fd837efe4fb8bfc2417cfd1c665f
+  Correlation Id:          822c03f6811857d9ee15fc02d6aaedcd
+  External correlation Id: 9091799634043630236
+  Machine Id:              u+5c1vbJpLD761VzxK6sTTT2SE8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-apple-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple-6000.4.6-notifications" at "2026-05-13T14:44:23.4732899Z"
+[Licensing::Module] Licensing Background thread has ended after 1.12s
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.777 seconds
-Domain Reload Profiling: 2084ms
-	BeginReloadAssembly (502ms)
-	RebuildCommonClasses (91ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (256ms)
-	LoadAllAssembliesAndSetupDomain (429ms)
-		LoadAssemblies (487ms)
-		AnalyzeDomain (411ms)
-			TypeCache.Refresh (409ms)
-				TypeCache.ScanAssembly (382ms)
-	FinalizeReload (780ms)
+- Finished resetting the current domain, in  0.253 seconds
+Domain Reload Profiling: 585ms
+	BeginReloadAssembly (100ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (96ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (121ms)
+	FinalizeReload (254ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (89ms)
-			BeforeProcessingInitializeOnLoad (171ms)
-			ProcessInitializeOnLoadAttributes (205ms)
-			ProcessInitializeOnLoadMethodAttributes (191ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (67ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-woo54"
-[Licensing::IpcConnector] LicenseClient-woo54 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54-6000.4.6" at "2026-05-13T08:40:15.2581848Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27652, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              3a00119aea83436fade03d36a831c793
-  Correlation Id:          e06b82012780ac8acca386c2461dca99
-  External correlation Id: 4609957099208808468
-  Machine Id:              ESQUOVeMcbrJas9wvzRmuqFD1AA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-woo54-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.03s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54-6000.4.6-notifications" at "2026-05-13T08:40:15.2923572Z"
-[Licensing::Module] Licensing Background thread has ended after 5.45s
-[Licensing::Module] Licensing is initialized (took 0.13s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 14569623918176-UnityPersXXXX
+  Id: 14569749878227-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -180,108 +181,57 @@ Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshP
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 5.79 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.66 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.119 seconds
-Domain Reload Profiling: 2850ms
-	BeginReloadAssembly (556ms)
-		DisableScriptedObjects (9ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (262ms)
-	LoadAllAssembliesAndSetupDomain (826ms)
-		LoadAssemblies (802ms)
-		AnalyzeDomain (314ms)
-			TypeCache.Refresh (253ms)
-				TypeCache.ScanAssembly (236ms)
-			BuildScriptInfoCaches (52ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1120ms)
+- Finished resetting the current domain, in  0.368 seconds
+Domain Reload Profiling: 896ms
+	BeginReloadAssembly (138ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (293ms)
+		LoadAssemblies (239ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (88ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (368ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (238ms)
-			ProcessInitializeOnLoadAttributes (547ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (45ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 6.23 ms, found 4 plugins.
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4151 unused Assets / (0.7 MB). Loaded Objects now: 4737.
-Memory consumption went from 95.8 MB to 95.1 MB.
-Total: 7.159600 ms (FindLiveObjects: 0.491900 ms CreateObjectMapping: 0.342300 ms MarkObjects: 5.188200 ms  DeleteObjects: 1.133800 ms)
+Unloading 4151 unused Assets / (1.0 MB). Loaded Objects now: 4754.
+Memory consumption went from 100.8 MB to 99.9 MB.
+Total: 4.283900 ms (FindLiveObjects: 0.417700 ms CreateObjectMapping: 0.097000 ms MarkObjects: 2.996000 ms  DeleteObjects: 0.771700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 187469.987528 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Suit_Normal.mat
-  importAddress: Guid(800a4deb0464c6e4bbe23b2e027782c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Suit_Normal.mat using Guid(800a4deb0464c6e4bbe23b2e027782c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dd306bc05a74554db3b65f93b2c6bec6') in 0.22803 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1e3bdcbbbf1fec570b7a40599b1e2a2e DependenciesID=dc915c56d7858cdef0960b1236bafc4e StaticDependenciesID=37fa005c7e6ff888639bf121feaa5436 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 14744.642748 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  importAddress: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5c21e3d3b8a92e5657597a85bf22fc2b') in 0.137152 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed37428376c45f6f7f8b7f8b49f3670b DependenciesID=974b0ad228a0cc55cd04bcc5516421c1 StaticDependenciesID=d8c3f50a3cf4ae6c7b1c4dffb6cef788 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.221453 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_MaskMap.mat
-  importAddress: Guid(b58f8239b8ca989489d08e3af3e6d0cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_MaskMap.mat using Guid(b58f8239b8ca989489d08e3af3e6d0cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fa07b466946f0f255c3810e3acd11f23') in 0.0431746 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d70a5bbe8004ae2b65f68805604189d2 DependenciesID=2f12730aaa4ebb3ff312e68103099cad StaticDependenciesID=18d0f953c6feb0a4e1d2e155fb1e186b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.407820 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat
-  importAddress: Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat using Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '40f1d464ebda6b054aaaa81e89083fc2') in 0.0276315 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c91fbf1cc9ee4488559e5d04de56daff DependenciesID=97fe864fe396900aadef6bd6986f74db StaticDependenciesID=723da9003804b280531ad77e7ffea8a1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.563615 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_BaseColor.mat
-  importAddress: Guid(5fb7a189b56380e4395fb1f03944697c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_BaseColor.mat using Guid(5fb7a189b56380e4395fb1f03944697c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4d48d219a9348e90d39867674fe5c324') in 0.0262531 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3987c40115a845da48d49f80dadf101e DependenciesID=8dedfef631048f827b8f702ddd077249 StaticDependenciesID=95c3cecfe586bade6393c777a622d1b4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.062454 seconds.
-  path: Assets/11.unity
-  importAddress: Guid(583073f6043aa644ba33925198caba41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/11.unity using Guid(583073f6043aa644ba33925198caba41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e42f2155bd0ceff64fc15a4b48f30f8e') in 0.0182794 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d46f67009881a1c0a7e1c30107606cd DependenciesID=e70ea2a388599ba767e8b1ca100af38c StaticDependenciesID=3a87834c8344e4aceaa078f227757646 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 80.596153 seconds.
-  path: Assets/01. Scenes/runnerscene.unity
-  importAddress: Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/01. Scenes/runnerscene.unity using Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '957efe561c48a84d2ec5efc1194c4ecd') in 0.0253985 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd13a1b2e03143023f7be9abb18eb506 DependenciesID=3631a9922eb8719f2141cb47ba517b1b StaticDependenciesID=4d8b3b2fc7dee5272868125a8ba5277a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.039413 seconds.
-  path: Assets/01. Scenes/runnerscene.unity
-  importAddress: Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01. Scenes/runnerscene.unity using Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd4df75a746fae26d685076285eecd7e5') in 0.0007477 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11d1b66fdf9e4f9b8c58c994c46eccc4 DependenciesID=825719301d91ec206b17715e0882f0e6 StaticDependenciesID=b9f531c002f060d8a2e0e4f639966d3c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 482.701438 seconds.
-  path: Assets/01. Scenes/SampleScene.unity
-  importAddress: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01. Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a04644d53ebf1a26bfca6d16537acd1e') in 0.002551 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=13084614189807a3e4352c2e50be9910 DependenciesID=67cccd5137d7cf5ae595c005066b7261 StaticDependenciesID=4c3db96b036e7a755c7caefdc7c77843 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 536.871315 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  importAddress: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b63086b17d4d5db4e40a3a74d0683cb2') in 0.0827759 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33de5abfac4c693ca4caf17d37023913 DependenciesID=635a051a4226f22330f4a2da2adf5553 StaticDependenciesID=1394a7f6ffd310a121cef69eb01230f6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
