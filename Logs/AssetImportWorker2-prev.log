@@ -1,0 +1,1586 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.6f1 (0b051c2e5d54) revision 722204'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 32266 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-05-14T15:22:02Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-grand" at "2026-05-14T15:22:02.9076345Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Runner
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+11597
+-licensingIpc
+LicenseClient-grand
+-force-d3d12
+-job-worker-count
+3
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Runner
+C:/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [9840]  Target information:
+
+Player connection [9840]  * "[IP] 172.30.240.1 [Port] 0 [Flags] 2 [Guid] 740510318 [EditorId] 740510318 [Version] 1048832 [Id] WindowsEditor(7,BOOK-R9P5JOJ92N) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [9840]  * "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 740510318 [EditorId] 740510318 [Version] 1048832 [Id] WindowsEditor(7,BOOK-R9P5JOJ92N) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [9840] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9840] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 12.37 ms, found 4 plugins.
+Initialize engine version: 6000.4.6f1 (0b051c2e5d54)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Runner/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        Intel(R) Arc(TM) 140V GPU (16GB) (ID=0x64a0)
+    Vendor:          Intel
+    VRAM:            18391 MB
+    App VRAM Budget: 17623 MB
+    Driver:          32.0.101.8424
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009633 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.931 seconds
+Domain Reload Profiling: 2281ms
+	BeginReloadAssembly (423ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (230ms)
+	LoadAllAssembliesAndSetupDomain (563ms)
+		LoadAssemblies (406ms)
+		AnalyzeDomain (539ms)
+			TypeCache.Refresh (535ms)
+				TypeCache.ScanAssembly (510ms)
+	FinalizeReload (935ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (143ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (301ms)
+			ProcessInitializeOnLoadMethodAttributes (197ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-grand"
+[Licensing::IpcConnector] LicenseClient-grand channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-grand-6000.4.6" at "2026-05-14T15:22:07.6084059Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 29864, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              4a073ec6804d4bfa8bb20c2e968a3288
+  Correlation Id:          981efa8c3c00919c4e4e91e2b50afe10
+  External correlation Id: 7760572205937275253
+  Machine Id:              q6EWSz34Fwhzs2thzUDwHNbRTUw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-grand-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-grand-6000.4.6-notifications" at "2026-05-14T15:22:07.6213584Z"
+[Licensing::Module] Licensing Background thread has ended after 4.72s
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569749926784-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 4.78 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 5.72 ms, found 4 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.833 seconds
+Domain Reload Profiling: 2363ms
+	BeginReloadAssembly (414ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (159ms)
+	LoadAllAssembliesAndSetupDomain (862ms)
+		LoadAssemblies (736ms)
+		AnalyzeDomain (381ms)
+			TypeCache.Refresh (320ms)
+				TypeCache.ScanAssembly (294ms)
+			BuildScriptInfoCaches (49ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (834ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (361ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.64 ms, found 4 plugins.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4151 unused Assets / (241.1 KB). Loaded Objects now: 4738.
+Memory consumption went from 98.2 MB to 98.0 MB.
+Total: 5.753500 ms (FindLiveObjects: 0.400900 ms CreateObjectMapping: 0.230900 ms MarkObjects: 4.213500 ms  DeleteObjects: 0.904900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3433.134524 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.prefab
+  importAddress: Guid(6f3dae64f3a059246857ceb960554118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.prefab using Guid(6f3dae64f3a059246857ceb960554118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '268a2232198c7095ac324b9b4b06fe1d') in 0.2083107 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9564c841bf9dc3eff2a841f223655130 DependenciesID=c0f5e09685cdc5246e5bd0d46976eb0c StaticDependenciesID=014f577f475f3fff98991f04a5add0aa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_Normal.png
+  importAddress: Guid(12f86581ef393f540b93fee715abc2a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_Normal.png using Guid(12f86581ef393f540b93fee715abc2a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f74e7a3b2ede38759d860ca874af4223') in 0.0929745 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=66a1fc392294d107437721cfa2eac01e DependenciesID=250fcd71b5e3236add1644a9b6b80022 StaticDependenciesID=020eb156d9b25985c143492acebd2874 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/01. Scenes/runnerscene.unity
+  importAddress: Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01. Scenes/runnerscene.unity using Guid(02bf4a6b6c0272c40b96c13fd644477c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '07c140974d1dd29c90920e2110be22b1') in 0.00167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11d1b66fdf9e4f9b8c58c994c46eccc4 DependenciesID=e392317cc6098bd77b97c186a9758bf4 StaticDependenciesID=748f79c102241045ec5ea644a47c97ee 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/Attack.anim
+  importAddress: Guid(73d46114397df2342bccbac2de05a72c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/Attack.anim using Guid(73d46114397df2342bccbac2de05a72c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '02e737bf79a93164651d16f22ae44f93') in 0.0349267 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cc226e75b7dbb7d31c82dc7583a3449c DependenciesID=c0252f91458009ce5e6487d1896d353b StaticDependenciesID=9f39859a1d82896adb246ea6487622ed 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_MetallicSmoothness.png
+  importAddress: Guid(d4107e2a02596dc408ee068aeff2ba4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_MetallicSmoothness.png using Guid(d4107e2a02596dc408ee068aeff2ba4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b1e3ea1ed33a9018f9c695ea71ab623b') in 0.0323006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c83bf23147838ef46f6d89b50afa1d8 DependenciesID=2b1731f4c11ad24cb4a684526afd687f StaticDependenciesID=d7a0d94810215e362859bb9a5930ca83 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001558 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Emissive.png
+  importAddress: Guid(51e0d6182e2f1ab4a9f6cadcfa513d23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Emissive.png using Guid(51e0d6182e2f1ab4a9f6cadcfa513d23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6b9590f2853efb60575eb70a4bf88735') in 0.0180782 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=59b3d993fc2e65064ccf7841735a37e7 DependenciesID=2a7f0aae66e58ae01a80b7c92137490c StaticDependenciesID=98a254fe768cd6ef3437b142b52d32a4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/idle.anim
+  importAddress: Guid(ce3236fcdfa90a24399aaf5745615a91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/idle.anim using Guid(ce3236fcdfa90a24399aaf5745615a91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '009ab8b774e284c21ee0d05c734c91b6') in 0.0141524 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a564d6505a032b60e10853c30e6498ea DependenciesID=9d54e334ac4b6f6e23c1a1fb6aba76f6 StaticDependenciesID=922954da8a542c162cf2a10c4bb52ab1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/blue.mat
+  importAddress: Guid(7ec4c4f835594f449bad1ef7d8a4a4e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/blue.mat using Guid(7ec4c4f835594f449bad1ef7d8a4a4e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e2ccfd05e4b517283e7d9daa57bc46e8') in 0.0689875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=748b782ae9a4bcfddaed44bc84816712 DependenciesID=4b97861ac2d2deba4c71ce6c8f275189 StaticDependenciesID=01f8eae959094868eea6ee390be268f4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat
+  importAddress: Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat using Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '408fd5e2488462ef3445246692e9e008') in 0.0454208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=707294a50be8a9ee541c87e54fbce276 DependenciesID=ed64822539eee1dbaa5b4193783fbdeb StaticDependenciesID=47b60b0d14f552515a654f98dbb327ae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Armor_Mask2.png
+  importAddress: Guid(1f943dac066bda3409132000ae309b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Armor_Mask2.png using Guid(1f943dac066bda3409132000ae309b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cc7ed40efb908129d4b6af31a1717074') in 0.0276072 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f6487d63ff27c744099760e17ee7b0a DependenciesID=545c31622ab3a77bc39e2a8ae24aba87 StaticDependenciesID=b2ea5e41a6421f6e039bf354a44755c4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001307 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/Foe_Creature.controller
+  importAddress: Guid(7b8b17829f3f2c94a9462c763317bf4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/Foe_Creature.controller using Guid(7b8b17829f3f2c94a9462c763317bf4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6bd9c670b76268e097e9d7aad728adb4') in 0.0815225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cdf85761a154a3b6554fc3d740110551 DependenciesID=ca9e14c47bff04416adb1bd3183c6a2d StaticDependenciesID=546194e39d75ae2b78f9d38de3970ae9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Prefabs/Futuristic_Girl.prefab
+  importAddress: Guid(fefc1076fd7d3324e9b64e2937005a47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Prefabs/Futuristic_Girl.prefab using Guid(fefc1076fd7d3324e9b64e2937005a47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e40b1d115ff1d694fa0ae28858d73b39') in 0.0194 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ba6ec8a0112b517297dd5433127865bb DependenciesID=e72931f389869ccff15a1914d0b84a69 StaticDependenciesID=c6686b6da2fe6dcabbe3dec71548577e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 166
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_BaseColor.mat
+  importAddress: Guid(5fb7a189b56380e4395fb1f03944697c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_BaseColor.mat using Guid(5fb7a189b56380e4395fb1f03944697c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '748aa65613329d77a0f94f685b50e0a3') in 0.027993 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f9071f84ccc7f4ea0546ad41c9b09b3 DependenciesID=f43c7b882c4261f183cb747c4cd6b810 StaticDependenciesID=911b41fb41ec6312ab278bce0442d852 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/DEMO_Scene.unity
+  importAddress: Guid(bfc8b0825825c004f841de3afce6c14b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/DEMO_Scene.unity using Guid(bfc8b0825825c004f841de3afce6c14b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '18b6c7a240a8b58d5c760913645e2c2a') in 0.0143926 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ee101ea2c5800a16450f8a6ca625ad3e DependenciesID=8dd857e70ad915b59c72b71290ace494 StaticDependenciesID=ebaf29cc18b4e3fd030b7f80c17b6c5d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_B.png
+  importAddress: Guid(2842c848ad83b6d4aadf8f2ffcd44910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_B.png using Guid(2842c848ad83b6d4aadf8f2ffcd44910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4818e9998ccdc67b38356cedef87ce8c') in 0.2033603 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6c024f2d531ee87d469835abe40e46eb DependenciesID=2995d3903eed3ad0e66cd8ea0a15db68 StaticDependenciesID=78b42323edb841ca2ccf38f7c78e2ef2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/InputSystem_Actions.inputactions
+  importAddress: Guid(289c1b55c9541489481df5cc06664110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/InputSystem_Actions.inputactions using Guid(289c1b55c9541489481df5cc06664110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '330945c464f3425bb0802aa052fb5a5d') in 0.3342033 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c274b84af9a61ebcc778a08789b6eac1 DependenciesID=c1394bf134c9f3accb367d23232b803e StaticDependenciesID=ae8a94aa5e9ce79900a1f127521aa4ca 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 5.87 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.070 seconds
+Domain Reload Profiling: 2742ms
+	BeginReloadAssembly (505ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (200ms)
+	LoadAllAssembliesAndSetupDomain (858ms)
+		LoadAssemblies (901ms)
+		AnalyzeDomain (266ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (244ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1070ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (253ms)
+			ProcessInitializeOnLoadAttributes (435ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (26ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 6.26 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4153 unused Assets / (1.1 MB). Loaded Objects now: 4745.
+Memory consumption went from 100.4 MB to 99.3 MB.
+Total: 7.755300 ms (FindLiveObjects: 0.478200 ms CreateObjectMapping: 0.348100 ms MarkObjects: 5.560600 ms  DeleteObjects: 1.367200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 131.674402 seconds.
+  path: Assets/02. Scripts
+  importAddress: Guid(13e814c81967dce4fb72f1a7f1e8a282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02. Scripts using Guid(13e814c81967dce4fb72f1a7f1e8a282) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd476e00765330eaf5dee2893bb42acef') in 0.0031627 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d067ff6d33d1576021c571d68970eeb5 DependenciesID=8c928ce56338b2022f8796d6698e9086 StaticDependenciesID=34102cbf39dce18ac9cd39f421e48f9e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.371795 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 [RM] - Land.fbx
+  importAddress: Guid(2d5dcba826921c444bb225aa66997abd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 [RM] - Land.fbx using Guid(2d5dcba826921c444bb225aa66997abd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6b30f90fc2aab6771307ebf765edc931') in 0.3878358 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8680227399ccb17f00296b938add0c26 DependenciesID=92a5de06f44c2b2348bd18d191000378 StaticDependenciesID=5f845a9f26681c8d16b01c7e6907a71d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01.fbx
+  importAddress: Guid(d0d93c131bda12e4bb9798ea4aefb6cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01.fbx using Guid(d0d93c131bda12e4bb9798ea4aefb6cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3e8ce5e44b1cc11a564dc11d567dcbf6') in 0.0343056 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d54398b133bd8e3efcab684fb19a5b4c DependenciesID=0017ff5d772a348ef12b66c99916f42b StaticDependenciesID=c48045cf6ba879b2c7258593a4b4eed2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Backward.fbx
+  importAddress: Guid(b7ff898919f115a4095d79af0129756f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Backward.fbx using Guid(b7ff898919f115a4095d79af0129756f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '645f16eff609401740a997acc9808601') in 0.0430078 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=819c3689b2e50dc150734282e3030396 DependenciesID=f4db1695647500d962b4810922f6df67 StaticDependenciesID=ac4a8bf2f9b57cdb487c97a619881379 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn
+  importAddress: Guid(e1f77fcf2f98c1f4099b95656e1e841b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn using Guid(e1f77fcf2f98c1f4099b95656e1e841b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fbe500d590999739072b34b234e7a070') in 0.019039 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3606099da5c771233989ca4c5ab7b7a DependenciesID=1f72f869cf37e837d2a07d4a5fb80e16 StaticDependenciesID=fc7ec9027eb5380dc8aa6d153a696806 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male
+  importAddress: Guid(f2c0bdf39740723408c784517a995932) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male using Guid(f2c0bdf39740723408c784517a995932) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6ce4ff08ba2a0a338fdd150024c1a66f') in 0.0121491 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76f40eb3606b2c4d1fe2dbaeb78795dd DependenciesID=f0497955a867c6881880f88af44dfb18 StaticDependenciesID=c331c5fc0817405785825275cf757b49 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Human Head Mask.mask
+  importAddress: Guid(cba496d351611c54494800debaf419f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Human Head Mask.mask using Guid(cba496d351611c54494800debaf419f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3ea323bbebfd5c565bbe11616c29d8e0') in 0.0228826 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d6c76597672cf56bfa551df641060885 DependenciesID=6bc9783d9c22a478196c36462c795fb2 StaticDependenciesID=53e5a999de72bef4b957e5ff4c6ca1c6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_ForwardLeft.fbx
+  importAddress: Guid(f1c72df816110fc4394d0e781c72bc31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_ForwardLeft.fbx using Guid(f1c72df816110fc4394d0e781c72bc31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f06a6c870bd8ef504ca4354c37d75f92') in 0.03188 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c0d4f5e976d3369721a232d29ee7428d DependenciesID=ec17e4b675d43acd702587ab420cc5fc StaticDependenciesID=7721f16f7f0b1d4a2cd109ac2515d286 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002080 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion/HumanF@Sprint01_Right [RM].fbx
+  importAddress: Guid(9d09a7ef30cc1fe41a7f28ee8fe465c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion/HumanF@Sprint01_Right [RM].fbx using Guid(9d09a7ef30cc1fe41a7f28ee8fe465c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7a7f428efd336f0df3709239421fd069') in 0.0473886 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b41bdff5bf485ee75abc1d5c32b45746 DependenciesID=68812d58a5d2b252ecae83276f4c63c1 StaticDependenciesID=4efad6e089374a8869901d2346dbdba0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000674 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Prefabs/Human_BasicMotionsDummy_M.prefab
+  importAddress: Guid(bb96394e9629f20408ea23d3760ba123) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Prefabs/Human_BasicMotionsDummy_M.prefab using Guid(bb96394e9629f20408ea23d3760ba123) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f8a8627dbf4f67a8ebb65fc0c850d34b') in 0.0738463 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b1d35c80a3d0d4ad0276622679bccfa DependenciesID=dd8a366b275fcea76e02a57367b6b1a8 StaticDependenciesID=3f5a2d63d0785bc1c1ea35b4adef45c9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 247
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008298 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion
+  importAddress: Guid(11d274b4b5c082449a03eb98bce92189) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion using Guid(11d274b4b5c082449a03eb98bce92189) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd79ae825c5045ac6f7446da9a589a7a7') in 0.0150968 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6703091436648f1ba914f9305a176ca6 DependenciesID=20ac1017e5e7e50631fcad59bb682115 StaticDependenciesID=d57f90dabddd430bcd84ce20c634e1a2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004859 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM].fbx
+  importAddress: Guid(c337eaab751341e43ac0ba1c83ead291) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM].fbx using Guid(c337eaab751341e43ac0ba1c83ead291) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c825d6e9d4a7cbda5b0d1336e8058421') in 0.033683 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab0a5503b97c757aaf5e02e481835da3 DependenciesID=2b0a2e82910b4c8f33bfa7f1533c855a StaticDependenciesID=0ea46acea53fd1e5dcc45ed2bb54a6a5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014563 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_Right.fbx
+  importAddress: Guid(067a556d54da4e94b8c6cfc96e97d680) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_Right.fbx using Guid(067a556d54da4e94b8c6cfc96e97d680) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cd47d487b94d72ac88e281806e69f983') in 0.0310272 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d5a7efbd0289d0e5e48a2948a2bcf45d DependenciesID=f0618519f2d4ce843f58dcbfcabd9d48 StaticDependenciesID=dc128892fe43ae08e61279b90d3017fe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_Left.fbx
+  importAddress: Guid(1ee3692ad357102419809ccbcace4969) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_Left.fbx using Guid(1ee3692ad357102419809ccbcace4969) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '720fcc6c85a2efe01c784355c942c33e') in 0.0883722 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1c1b21422dd6f30e8af074e73b452999 DependenciesID=864c6ea2db9ca6a4931c16c626567ef0 StaticDependenciesID=51e8949c802c67b3523ffbd35ee368ab 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Social/Conversation
+  importAddress: Guid(f9507c68eeb7d1d4c9cf86799a26832e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Social/Conversation using Guid(f9507c68eeb7d1d4c9cf86799a26832e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7a454fb09422d25561bdf323c6fd0cc7') in 0.0309193 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9793a8d0e01bc8a5f440fc489c999f00 DependenciesID=d127ef2ed8bf24b2fd0107ed287c1825 StaticDependenciesID=983eb766a7b84d68a8d88349e8d322f6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Scripts/UpperBodyAnimations-SpineProxy.url
+  importAddress: Guid(600f7cf1c6250e84687d018d42666742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Scripts/UpperBodyAnimations-SpineProxy.url using Guid(600f7cf1c6250e84687d018d42666742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dd0081d582d22c58e8c0d46c03418c44') in 0.0146609 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c48f3643c233fbd7f146e0ed07b0204c DependenciesID=42d7dce64635a6bfb8be24a3fa18b1f2 StaticDependenciesID=f6ed6128ffb9f0b0b5d8d5b3cf227761 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles
+  importAddress: Guid(5e92f90055a54ab47b74a1f5297faecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles using Guid(5e92f90055a54ab47b74a1f5297faecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a65afaebf42a032b195c245aeac5843f') in 0.0100433 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d6cf084e09fa2484ad09f1eb34f4f856 DependenciesID=b39cae8ea6ca425da61f7718c1866e8e StaticDependenciesID=2610191b35814aedba13df921578d8bd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/AnimatorControllers/HumanBasicMotionsScene.controller
+  importAddress: Guid(393051f55b8023349abb9a2cb9bdcfef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/AnimatorControllers/HumanBasicMotionsScene.controller using Guid(393051f55b8023349abb9a2cb9bdcfef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '798aab53dab6c81f7bd6970ce935febe') in 0.0330472 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=78b15c2a8caf343d58e7cb0aa5a96235 DependenciesID=5b54ffcf6492b2511fb72c3cfcc462b8 StaticDependenciesID=aa387728a697b323f8b776fef31e67a1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Backward.fbx
+  importAddress: Guid(f1f1135ca9cfa8c47bf81718bb0d6873) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Backward.fbx using Guid(f1f1135ca9cfa8c47bf81718bb0d6873) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '43576e24bf8f67d3739d5be22b1728f3') in 0.0707003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b90327a21415a73c808896f7ab2b7149 DependenciesID=b5a66663ebb76e8914b4edabf8a14234 StaticDependenciesID=64021cd8737d7d3ddd36dcceae62fb11 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002954 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_Backward [RM].fbx
+  importAddress: Guid(78375be644e8f3a45bdc574dcc4fdb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_Backward [RM].fbx using Guid(78375be644e8f3a45bdc574dcc4fdb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '31df1c6ae061e22383c90dd78db44453') in 0.0264181 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3161779ceec5b7b68b2e2ed983da4655 DependenciesID=d8b9ba105d57329c1b16355e3b405fd8 StaticDependenciesID=24448c691cb1a643a7991be7f2eb4d93 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_ForwardLeft [RM].fbx
+  importAddress: Guid(56d8ff19983f1de47a7aef7fb3a2d2e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_ForwardLeft [RM].fbx using Guid(56d8ff19983f1de47a7aef7fb3a2d2e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f8916750a4aa7831e5997308bac61997') in 0.02718 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1177d76d1d7b715170b7d799b8892f9a DependenciesID=9d27a47e9733d0b343b942e52d0e8cff StaticDependenciesID=946414ca7662ae806247ea2dc30690cd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures
+  importAddress: Guid(9062e0d614ae38b458231f34f36af0e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures using Guid(9062e0d614ae38b458231f34f36af0e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a3af39d436e97ec9cf796f484c0fe5d9') in 0.0104958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f82ce2365b6e74626fcc55af399ef5c6 DependenciesID=40511ca346cc58d8078fa265b7429ae8 StaticDependenciesID=887e1db8c2a26903df47a366318d9966 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/RootMotion/HumanF@Walk01_Left [RM].fbx
+  importAddress: Guid(d566567af8d4548409c7a95dc3995977) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/RootMotion/HumanF@Walk01_Left [RM].fbx using Guid(d566567af8d4548409c7a95dc3995977) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f4f79ff526177423ad9e1d6aa5cd1446') in 0.0469689 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e17e744c9c607c09cdb100a6ea87fffb DependenciesID=9c6e0d087e0f01c2924db9c26c3f2d34 StaticDependenciesID=14a0d7655795eb9d5da278d05a9cc406 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias
+  importAddress: Guid(fe6cd0af1c7917c45a357ef6721c88d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias using Guid(fe6cd0af1c7917c45a357ef6721c88d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e565c6505797ab747528c52595e2afcd') in 0.0111479 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=89ff7f992edf49b753270eea12c53a09 DependenciesID=6f1ba8e59bc4329093bd629491a849b3 StaticDependenciesID=000c55773e884c99f712ee41f6261401 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hand Right Mask.mask
+  importAddress: Guid(742dda8cea256e347a5e36860b12ce91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hand Right Mask.mask using Guid(742dda8cea256e347a5e36860b12ce91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '872b1fec862a5b3107065f888310e626') in 0.01858 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dcdc61623e470d1a5fac1d016c6cae0f DependenciesID=5a3c4b6dae0249ba55ad0ad3af699636 StaticDependenciesID=026657bf8f2ad5135d1cdb29fdebeb9a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn/HumanF@Turn01_Right [RM].fbx
+  importAddress: Guid(793ed774c3ee38a45bea52043777b72e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn/HumanF@Turn01_Right [RM].fbx using Guid(793ed774c3ee38a45bea52043777b72e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0d0eaf8ed37c09d566f24c2ba3d0f212') in 0.0296948 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=571632dcfc8231aaaea6d9342ee0affe DependenciesID=8fbe5014c7f46033310dd58be5531c75 StaticDependenciesID=83b33d91ffed084d2b1f1ecf67d48b6c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM] - Begin.fbx
+  importAddress: Guid(53186c660ca35254cb302f56f055063e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM] - Begin.fbx using Guid(53186c660ca35254cb302f56f055063e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '305e493d92ceb49f69ced804cf9f2f2b') in 0.0432803 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25edc58029139e6d4606f51e5d230a44 DependenciesID=fec275056fe28d2443bf43df62c779f4 StaticDependenciesID=8344d134c4fc38953f735abccffe62a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Right.fbx
+  importAddress: Guid(e4554e344c29aeb4087271d927e625f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Right.fbx using Guid(e4554e344c29aeb4087271d927e625f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '566722895d990f74e2cbb7ebc92a7c40') in 0.0225109 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=06c74dfbf29b550347e3e9b22a59e70b DependenciesID=906d768ff22e61e1eb63e7a53b8e1cf5 StaticDependenciesID=bf87927fb097af2d848f6fb7bb63bbe7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Idles
+  importAddress: Guid(e6594c847f8afc14d9221105e31658cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Idles using Guid(e6594c847f8afc14d9221105e31658cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f25210a58186eaeadf203fa008e43c59') in 0.0292483 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02378f56cb20e0c8c0126d4e6d7b9561 DependenciesID=d7dc8b6310feda2a106d164349f644aa StaticDependenciesID=775817a8507be658a020f7256873a7d6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes
+  importAddress: Guid(c2107d18fdd13e046b6b333ce7d88eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes using Guid(c2107d18fdd13e046b6b333ce7d88eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4bb06a184fb33868059fe3dc76caefc7') in 0.0126688 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f265656ce0e3d9be948461a92e752c4c DependenciesID=03f6bf833b66b6003d759ea9bfa8c347 StaticDependenciesID=63a22ba5d74ba45dcc3b53744ab0f47f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_BackwardLeft [RM].fbx
+  importAddress: Guid(d4ad07e9a02ec4241a5110960579fb59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_BackwardLeft [RM].fbx using Guid(d4ad07e9a02ec4241a5110960579fb59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f88ca5175fe3d01b92e95c5787787bb1') in 0.0259668 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=62fc8b6276f8e700c6ef05b81d6302d4 DependenciesID=1044afb15c3e84039c2faf3bf5283a18 StaticDependenciesID=179178a4a19ec325b798109471a91117 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle02-Idle01.fbx
+  importAddress: Guid(da2ed2e1aae1da34684fe894590efa54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle02-Idle01.fbx using Guid(da2ed2e1aae1da34684fe894590efa54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '34940f0b79f9fb27615452e0d33b1c4d') in 0.0307051 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d03973f6816da98e082baef5f4d0b5e DependenciesID=ee7560ab1e213970464ce86d1ac6a035 StaticDependenciesID=9fb7c311cf4118f17e8460b23c8f1d30 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands
+  importAddress: Guid(4ff39103735d8aa4cb2b923e50e2d165) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands using Guid(4ff39103735d8aa4cb2b923e50e2d165) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f1de1349ba149c17176f7b34d6ad71f2') in 0.0128283 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=801219186b2b85f5ea699db8da96b7a4 DependenciesID=a950799d6a91202133e1c7e5b08ea13e StaticDependenciesID=71a14b92d00ab20c05e1a35039ca275d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn/HumanF@Turn01_Left [RM].fbx
+  importAddress: Guid(ca1026661b885cc41b96ef19b8fa736b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Turn/HumanF@Turn01_Left [RM].fbx using Guid(ca1026661b885cc41b96ef19b8fa736b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '528efeaf6cd6958d9b83ee9ba4ce0ba4') in 0.0228714 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b6dd486f4ab76774599e43ae4b8f9f1 DependenciesID=621f4dbc25fa05eaf861b457716420f9 StaticDependenciesID=8c23cbd0b00031eb232c93e2f1168eba 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Social/Conversation/HumanM@Talk01.fbx
+  importAddress: Guid(5277e5180e302184fb73653674a14c85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Social/Conversation/HumanM@Talk01.fbx using Guid(5277e5180e302184fb73653674a14c85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ea18e3f4890a7fc0a2ea1191a2855df7') in 0.028791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6da82e160c0960431d859359daf9a07f DependenciesID=91b432889f41d174026f6c7902a52021 StaticDependenciesID=ce59a97b00f51d76caa76aba65e44319 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003125 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn
+  importAddress: Guid(fef76271049cee74db99d4a4ab446955) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn using Guid(fef76271049cee74db99d4a4ab446955) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4ddaaa7866360e0cc8c4824164ec1e80') in 0.0098161 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=af384362df4d776d6fd083d1e841e91e DependenciesID=295bda13969e848aa99eaa16645af101 StaticDependenciesID=0dee7d821687c1364287e542a6383f55 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle02.fbx
+  importAddress: Guid(24b1b054ed689e44ba553f9841ebca06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle02.fbx using Guid(24b1b054ed689e44ba553f9841ebca06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9dea9c508aa9f9311a14c676cf514799') in 0.0311005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d609602d248c33ac5ecf022b7dd6bd64 DependenciesID=9303bc48c0c2d126f60d243f46264bc9 StaticDependenciesID=c87e9037e23e4008773a833bb83a9e1e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_ForwardLeft.fbx
+  importAddress: Guid(62f242d2f9358a8429c9ea16bfc70c60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_ForwardLeft.fbx using Guid(62f242d2f9358a8429c9ea16bfc70c60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '22bb80b41c1e652478c221d077fb2cbc') in 0.0234926 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=daa8d57e748076be910b3c6d7255306f DependenciesID=56330e74c9876806d076e1e2de942dd4 StaticDependenciesID=41a384f1e92739711f6dc69497f367b8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Left.fbx
+  importAddress: Guid(b702e254d5e77904da0429cfcbc77709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Left.fbx using Guid(b702e254d5e77904da0429cfcbc77709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '40c53c1154dd411ac2ba9d9d1f247296') in 0.0406527 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b33d129f350b96a01d660b8bf1b6745 DependenciesID=1d26eca56dff5729eebdfebd21fab8fb StaticDependenciesID=ff6e0d372da1a2273d3182768b06872e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/HumanM_Model.fbx
+  importAddress: Guid(2faa610713d3b3c439473daa55e8c60a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/HumanM_Model.fbx using Guid(2faa610713d3b3c439473daa55e8c60a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b1edc3c92bec5dd28efb21453824ed94') in 0.0400118 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a02ffcaca42cfeb6f9d6d9d7539dd2d9 DependenciesID=f6d5563e0f9a1884619b74f87fe60764 StaticDependenciesID=83181e9d9c785be470c09f2f98a4d20b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 124
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hands Mask.mask
+  importAddress: Guid(69b447faf5895f1428a1131028d8893c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hands Mask.mask using Guid(69b447faf5895f1428a1131028d8893c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b6265d8843e8a963d080eeb0e65e0d08') in 0.0148403 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=37e87a6b312df60e66f0f9ba206af8a5 DependenciesID=797177375b71c06cbab9029299a43518 StaticDependenciesID=b871693a5ad8307d8deb516ffa36ea39 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_Left [RM].fbx
+  importAddress: Guid(9804b1ef8ab27f84f9d98515273f70e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_Left [RM].fbx using Guid(9804b1ef8ab27f84f9d98515273f70e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6825ad9689665c99f0f5bf2ba4d058e4') in 0.044345 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aa003c0ab2a6bcd434536799b3021b69 DependenciesID=485aa996fa856973818ed7d07d7bc1a0 StaticDependenciesID=2040891a7b913f95f48d5a79bd50925e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_Left [RM].fbx
+  importAddress: Guid(f76f0d054afdd5845a03ab8eea5b79b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_Left [RM].fbx using Guid(f76f0d054afdd5845a03ab8eea5b79b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6c5b23b1c69e25bca77211640f2a9024') in 0.0280748 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=35a057b72aaed9e0c91a187a9354987f DependenciesID=c670c0f8463b47c16e252a82e1f28c11 StaticDependenciesID=8d58b37067b40b98ea1295aa0e54c28e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Idles/HumanM@Idle02-Idle01.fbx
+  importAddress: Guid(e23ec565e5d40ad4d94e0af6010f22c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Idles/HumanM@Idle02-Idle01.fbx using Guid(e23ec565e5d40ad4d94e0af6010f22c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '121cb67e7ac42c1442326323e57a0f96') in 0.0247553 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46eface8fddf3151d009b31d944603d5 DependenciesID=1bfdcce96fd054c34e7ee14d1232a47b StaticDependenciesID=b05a4ba8a2fc5d78b9efeab438e36437 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/RootMotion/HumanM@Sprint01_ForwardLeft [RM].fbx
+  importAddress: Guid(d06bf066b1472584b83fa33f98d3499e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/RootMotion/HumanM@Sprint01_ForwardLeft [RM].fbx using Guid(d06bf066b1472584b83fa33f98d3499e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '64cf90fc900acf6e45938aabdef4a607') in 0.0230455 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=228854bd88ed6faa88d5079b8f11cf6c DependenciesID=6d82267b105f6a1537745f9528626f38 StaticDependenciesID=b3091d0b27e011373d1749ee745a4bfb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 - Land.fbx
+  importAddress: Guid(1dce3ce39fd4c0f4d9d2dbd5929a328c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 - Land.fbx using Guid(1dce3ce39fd4c0f4d9d2dbd5929a328c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '57efc137832893a83b63d17b4306a404') in 0.0249862 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ed6798aa706454016acf9cb02850be4 DependenciesID=226aaaebd20e42453c5b124aba699609 StaticDependenciesID=8e9a9e15f0f835b6c98ad4afe5be5062 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Shaders
+  importAddress: Guid(6f14e9f139cd8a647bda96b39cc88028) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Shaders using Guid(6f14e9f139cd8a647bda96b39cc88028) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eacea82ab5452092e1eeff4fc06949af') in 0.0113443 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=daee68c6837255a45474cbce249385b8 DependenciesID=bcbdc106d586268fed6625b096f783cf StaticDependenciesID=fe6295284171578e13de3c19d63abe3d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Models/HumanBasicMotions_SceneBase.fbx
+  importAddress: Guid(2e2ddfc093afcba4daa1b8caefc21e3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Models/HumanBasicMotions_SceneBase.fbx using Guid(2e2ddfc093afcba4daa1b8caefc21e3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3256c8cc7307592ecc2e7c67e6550bf1') in 0.0427383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74611647f1320fc683d5cbfe9e70e948 DependenciesID=cf16bb2c2ccbf49bdd08301f2e1d6acc StaticDependenciesID=0d46cb3343b04795460921a1b7944c8d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/HumanM@Run01_BackwardRight.fbx
+  importAddress: Guid(ca7bf50d255ff5749a3a9ff602076af8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/HumanM@Run01_BackwardRight.fbx using Guid(ca7bf50d255ff5749a3a9ff602076af8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f98fafe9cc1ef78d184258166585ca9b') in 0.0266434 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b2fea87195521cc54779a5112e4a6247 DependenciesID=99e19db61d50fa0add12d762d3cb7282 StaticDependenciesID=f317009be581bcb0a8075a7b2f680992 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Script/HumanBasicMotionsDemo.cs
+  importAddress: Guid(0a4037e6e845cef45a1c8695b047ae7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Script/HumanBasicMotionsDemo.cs using Guid(0a4037e6e845cef45a1c8695b047ae7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'efd014c61924435143c03d16d9383189') in 0.0133599 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33eb2172d6fb4d2ad87145651b5d1a02 DependenciesID=e5e7b01eae2486540e708796e6b575e6 StaticDependenciesID=95700321021a2e66970f443516e056c8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_BackwardLeft.fbx
+  importAddress: Guid(5dcc71b9770f2554e8fd3ea0d6c1e1f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_BackwardLeft.fbx using Guid(5dcc71b9770f2554e8fd3ea0d6c1e1f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5eaf6e1117f7e7fc1eafb560b84c2c0b') in 0.0215172 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2176709842ad8c879efe6e7e3ac800b7 DependenciesID=ef684924659d460b3e3611aaf6c2b7d4 StaticDependenciesID=0b06df1dc131bf3ff7ab1f8ae596b003 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions
+  importAddress: Guid(c88eb6ce85fdaec4d888ec5047a2f5a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions using Guid(c88eb6ce85fdaec4d888ec5047a2f5a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c110a416bcaac6ed646a9f3acc6dd3f0') in 0.0146543 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=24938bd43d3bd7dd377dcef4daf89794 DependenciesID=347bf7d8fbd3cd11868dd14f86ebe56a StaticDependenciesID=ab39dd03e54b43cf68947e38acd35c5c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Arms/Human Arm Right Mask.mask
+  importAddress: Guid(a1efc4df860a2fe4a8c3e44b28fd963e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Arms/Human Arm Right Mask.mask using Guid(a1efc4df860a2fe4a8c3e44b28fd963e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e49591ec6e743a217c9997a021e5d6bd') in 0.0124472 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6840505e905bdc76124c13a5687a01e9 DependenciesID=8ef27452c784ff1a6cfb8cc5f7abe023 StaticDependenciesID=48b452acd38759f8359481187b7f5e78 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_Right [RM].fbx
+  importAddress: Guid(c94ea603add67b745a5c6198446707fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_Right [RM].fbx using Guid(c94ea603add67b745a5c6198446707fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '104333da434b99cdfe4cb7abdbab959c') in 0.0249929 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8b014c64f2e2c562bdfc40c0aeec0611 DependenciesID=7899d2bdf5c0650a7ba53eec344486bc StaticDependenciesID=c9d616f73a26a6811ddea3b009b338bf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/HumanM@Run01_ForwardRight.fbx
+  importAddress: Guid(152af2cd00aaae34e816ebb8deb4b68e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/HumanM@Run01_ForwardRight.fbx using Guid(152af2cd00aaae34e816ebb8deb4b68e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd08e910a338691fde051596c4e3fa0ce') in 0.0274497 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=108c4c2c45c03edb0b0f369b04e88b50 DependenciesID=383beb7f227237b3d0398b5d94229741 StaticDependenciesID=b029cdd85ebe93a6b7d55227a7fe5dc5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_BackwardLeft [RM].fbx
+  importAddress: Guid(06db7ead6cfa3054aaa7cf24fa1d249b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/RootMotion/HumanF@Run01_BackwardLeft [RM].fbx using Guid(06db7ead6cfa3054aaa7cf24fa1d249b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'aa420701ece5ab0fd06050b0ff5806c6') in 0.0302566 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=91e8d4c8d5f45f0cf9abc07907c879d2 DependenciesID=4652aac1f77c0651ad42120a9f014443 StaticDependenciesID=574eda6ec2f4e827bf8a1909038e4f94 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_Left.fbx
+  importAddress: Guid(c0a52d9cd6720ec40813f0232613e371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_Left.fbx using Guid(c0a52d9cd6720ec40813f0232613e371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8ef848ee8e81724886501746198daeb7') in 0.0234136 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8d28f90de6758a4d60d6bf8b957be12 DependenciesID=aa9ea8535a17b0de9f2561ed5544cb66 StaticDependenciesID=434d646859d42836989b072bc1cfa3cc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_ForwardRight.fbx
+  importAddress: Guid(a82fb70254a844243a7fe7e02b1ff809) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_ForwardRight.fbx using Guid(a82fb70254a844243a7fe7e02b1ff809) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f7f5508c96c1da880712558fc308b5a0') in 0.0302528 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9b3bdcd3861040a0f558895ce14d71aa DependenciesID=f749a120a809154422abaf9b74e8381a StaticDependenciesID=de1ef3ada567d5cda8a127e0298c2fc1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_BackwardRight [RM].fbx
+  importAddress: Guid(4751c211b658f37459b5165f3a027e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_BackwardRight [RM].fbx using Guid(4751c211b658f37459b5165f3a027e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '56312d9aa1fee4e5081028b1c0420664') in 0.0294636 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=945599a22e16024f0460d7d1f4230923 DependenciesID=8d3a7679b557c67cb08a39ba554fa3c5 StaticDependenciesID=8a59f6f36c8629e4cb502ea531b8f831 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005604 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Shaders/HumanBasicMotionsScene.shader
+  importAddress: Guid(b2679f870b7bb124dbef598d6947bdea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Shaders/HumanBasicMotionsScene.shader using Guid(b2679f870b7bb124dbef598d6947bdea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ff16744bfc2cd4e5234e3deb1cb214ed') in 0.0225104 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9722093c285443c6ef3473b671bb6084 DependenciesID=ed00b32a1af79dfe8be9d098ed5e952d StaticDependenciesID=a8f494cc285c1406f5b53bdf3018869e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Right.fbx
+  importAddress: Guid(2cd37dc84c089ac4981cd6d36abd33eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Right.fbx using Guid(2cd37dc84c089ac4981cd6d36abd33eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'efe834fae74e64f964fd49384ba8fbd1') in 0.025151 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=009582c35580138da891c01b1427ed72 DependenciesID=1b44e780bfee10a60ad31fbe385dc8b5 StaticDependenciesID=d3dbdf1c0774578e526edabb2670e9f4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Masked Poses/Human@HandsClosed01.fbx
+  importAddress: Guid(5e9b37dd2b8b41648a4731a21c853b2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Masked Poses/Human@HandsClosed01.fbx using Guid(5e9b37dd2b8b41648a4731a21c853b2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8036b9fceb7868614e37fadeaaea9e04') in 0.0257377 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=251ecf6015e13985ae1e1697d1ffb69e DependenciesID=4c8ff0a52ea11f402d21d8c6a2838602 StaticDependenciesID=d3605a5213ed8ea65b0344e28f8f6e24 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Human Basic Motions 2.4 FREE.pdf
+  importAddress: Guid(9fefcdfef4f1bde45bef8b66dd81e417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Human Basic Motions 2.4 FREE.pdf using Guid(9fefcdfef4f1bde45bef8b66dd81e417) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e056b18b37f8a31712e7e7ab4c981ca9') in 0.0095186 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fea06b0db924851522b9af153422ebe DependenciesID=1c5ad5e30fd7c46ec72b6914cbf1d1a7 StaticDependenciesID=67d91ce7ddcf713ef8bf631d31c6f978 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_ForwardLeft [RM].fbx
+  importAddress: Guid(1c3a6282a5507e9439ab8d4787dd80c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_ForwardLeft [RM].fbx using Guid(1c3a6282a5507e9439ab8d4787dd80c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e186d39b236893587328b2729ad1109f') in 0.0231573 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a500c7e05d992bec29dad356ea63929d DependenciesID=cee9cd64bab6588ed2cc8f08deff0552 StaticDependenciesID=492951be0f34fca71d3c47b6f7e283ab 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks
+  importAddress: Guid(7913c8be7c5917b4b92b228ee0d8a9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks using Guid(7913c8be7c5917b4b92b228ee0d8a9d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6dc9788d6a7d5bb9d21cb1f65cf29709') in 0.0115657 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d2f11a5615654420040fee0b7c1f158 DependenciesID=95dfcfadcaee0ddfd5e3cfec85191d28 StaticDependenciesID=3a1e0d755ce2ce6afb8a4f3467860228 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Arms
+  importAddress: Guid(b3303b9e968a80b4694a24c6fcda0129) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Arms using Guid(b3303b9e968a80b4694a24c6fcda0129) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e2da998f43cdbd9812d9c2b69085ae7b') in 0.0150499 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=133c8ae7a5496f3167aef783ab83d08a DependenciesID=08d9b4dcada7e89bc1619f77d513eed2 StaticDependenciesID=22158a58783e0c0260e59254368d82fa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Left.fbx
+  importAddress: Guid(435a4728904deaf41a2ea8928e6c2c35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_Left.fbx using Guid(435a4728904deaf41a2ea8928e6c2c35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2a50f300fd78cde4c2380e1632f24d5c') in 0.0274502 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3ddc2a6358a0e34529886b24bb38e1c DependenciesID=4c43ecedaaa6b8d54b51610734e7fdf2 StaticDependenciesID=a221d101561bf9c6722904500cf14a4a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn/HumanM@Turn01_Right [RM].fbx
+  importAddress: Guid(8296dab082eb77948ab45344c6a09bcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn/HumanM@Turn01_Right [RM].fbx using Guid(8296dab082eb77948ab45344c6a09bcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cd64953aa6a43f5669cf09a6df533ac5') in 0.0565371 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3339e553f0d368bc26fe105cf3ef98e7 DependenciesID=489390ce9fe1433d4e1934d4158ef2ba StaticDependenciesID=ed1913a9276ccf6c3551b4dc6f7fd6b9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures/HumanBasicMotionsShadow.png
+  importAddress: Guid(2f6618ca4af94df49884ca327b3c36f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures/HumanBasicMotionsShadow.png using Guid(2f6618ca4af94df49884ca327b3c36f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f72ee712da5d779d25e8b9f4d5d6e1e6') in 0.100357 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0dde0060b548211d31f53298a012ba9a DependenciesID=d8008cf98d8b8c4b0509b212bf5e2576 StaticDependenciesID=0a5ac99f6081a4158027855179dd8a8f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle01.fbx
+  importAddress: Guid(0f69fd4f4ad106447896fb775199ed37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle01.fbx using Guid(0f69fd4f4ad106447896fb775199ed37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4406958284c71cef2a8e2b39ae3bb58b') in 0.0258068 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=efffbe16fe25f064e81a89465001e9fa DependenciesID=f1e51e8b5da99f3a87deef634c7033fa StaticDependenciesID=21d2558bf7c5cdb7ed4429ca2fe3d2cd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM] - Land.fbx
+  importAddress: Guid(fa72f21fa809c0542b384cb2889e901e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Jump/HumanM@Jump01 [RM] - Land.fbx using Guid(fa72f21fa809c0542b384cb2889e901e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cb4e3ef49b8d5787e71d4debd7a704c5') in 0.0345251 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=454ee809409398509dbff6d0baa6dd9b DependenciesID=216607c72811b85f9fc7330de615dbc1 StaticDependenciesID=d2578d06bf5abbe1b8073282cf3a7071 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/RootMotion/HumanM@Sprint01_ForwardRight [RM].fbx
+  importAddress: Guid(f2713866a3b7c484eb322653260adc9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/RootMotion/HumanM@Sprint01_ForwardRight [RM].fbx using Guid(f2713866a3b7c484eb322653260adc9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '30c5979efdc104b31ca909f30a50c7d2') in 0.0242968 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=35bac106656d36c935b1d27ca4c06831 DependenciesID=d02b8c8d4783878f6acc5984e09535b5 StaticDependenciesID=93ca7aa54559f1df3058c65306824edb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion/HumanF@Sprint01_Forward [RM].fbx
+  importAddress: Guid(ece8783ced0147a47bd91b75de63ffc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion/HumanF@Sprint01_Forward [RM].fbx using Guid(ece8783ced0147a47bd91b75de63ffc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8dbf6c19263a4e74e19b4da01e9bb226') in 0.02451 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e0d5cbfe3fab52aeac4070fc2c49d880 DependenciesID=e953625dfe75e1b925549ef55f9515ff StaticDependenciesID=03cf76abedfb75852e8ce7003cab44a7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_ForwardRight.fbx
+  importAddress: Guid(dd9cde7e792f5f946b091935d7903296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_ForwardRight.fbx using Guid(dd9cde7e792f5f946b091935d7903296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5d03baf76fafcf79fed384714de7e61e') in 0.0220566 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=49b4961f316cb0a7a4afb1f2efb7ab48 DependenciesID=0cc6562d73d0b6db8b4e986b126da062 StaticDependenciesID=d5ef13feb6bbfa07f73e1954c7923777 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion
+  importAddress: Guid(bcdb509f068fd7542b32d60ce2a04255) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/RootMotion using Guid(bcdb509f068fd7542b32d60ce2a04255) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '42e8961a2165c166c3da476598c3b70a') in 0.0097436 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0336a01266d40d8df3b3f6202468b78d DependenciesID=8e85d75c630a8890b7cec264c4dae695 StaticDependenciesID=c436c4f9b708a492d6bc5eaa71b4ffe4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_Forward.fbx
+  importAddress: Guid(f19b58f90d2ec3f409b2fd86a79e7cc3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_Forward.fbx using Guid(f19b58f90d2ec3f409b2fd86a79e7cc3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7190f48812499a75eb8dc15404ede3eb') in 0.0251451 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=88d832093339f72f0ef803cc071239f1 DependenciesID=6e0cdd426b1fba6a01279323cb247b61 StaticDependenciesID=153f91d5451ab39233d7d09d10c79450 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint
+  importAddress: Guid(c2c482be839c3de4ea61574648bc1e70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint using Guid(c2c482be839c3de4ea61574648bc1e70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0a9dc048214ef451d8c25e2350b04d37') in 0.0112124 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3776c4c53df2decaa6ff9909f6af4704 DependenciesID=f1bd69dec41e6a84a4d7d3888d0b4a2e StaticDependenciesID=8722c7f2c7c62681fd1762cf8afaa47f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Scripts
+  importAddress: Guid(e64c16a1da5b84c4488d02899ba2e527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Scripts using Guid(e64c16a1da5b84c4488d02899ba2e527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '611c5fdf92983d20c4353dde18dce480') in 0.0104854 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b94b0fdf24a6505d100c63749ae4bc1 DependenciesID=305889b3308eb8fad2d54e0a23815266 StaticDependenciesID=780bb04f70275147034f91b147842367 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_ForwardRight [RM].fbx
+  importAddress: Guid(954b6bbde5b5f5a46bb68711335f9f90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_ForwardRight [RM].fbx using Guid(954b6bbde5b5f5a46bb68711335f9f90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '38cafe92313ca309d7bc2a83a02ef17c') in 0.0206563 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2cb542634e061d40168436f88ad1a99f DependenciesID=3cab2ca2221ac0de7a90ad3747a3d738 StaticDependenciesID=635aaa25b4bde9f83ceb13f91988a74c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_Backward [RM].fbx
+  importAddress: Guid(31116f689ea4d374593385937d990c7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Run/RootMotion/HumanM@Run01_Backward [RM].fbx using Guid(31116f689ea4d374593385937d990c7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b5285cdcd51f18b31c142b27083e02d7') in 0.0283936 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ffd9d307525e627ab8d84fc1bfa7656c DependenciesID=c60dbbb6790dd97fb5ab9c68bdc1e2ed StaticDependenciesID=9e67148b4ee30e4b11d0a527a2bfbf36 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn/HumanM@Turn01_Left.fbx
+  importAddress: Guid(6f466407f9f035f4fbf426e686e6444b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Turn/HumanM@Turn01_Left.fbx using Guid(6f466407f9f035f4fbf426e686e6444b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ce6839d57b21b664a445c16f208e6ece') in 0.0271141 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9bae44cb2f23623371bc5a3a2043b8c0 DependenciesID=f40322d25f910f5373c98d17fd5fad80 StaticDependenciesID=69cfea5636cc10e82157299f47cf7737 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_BackwardRight [RM].fbx
+  importAddress: Guid(9a4f86a2229f88c4092c9a51a307198e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_BackwardRight [RM].fbx using Guid(9a4f86a2229f88c4092c9a51a307198e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a970e51cb6359ae4f888a8dcad84983e') in 0.0246617 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=31d7b4cdbc133e230f975c4eb4eae495 DependenciesID=3ded47eb9e3efa0a903c8e393f6a01a6 StaticDependenciesID=ed7b31a2f62dcd6a004ce3af0a5aa978 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures/HumanBasicFloor.png
+  importAddress: Guid(130afe1ea971137458b49086a23aea14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Textures/HumanBasicFloor.png using Guid(130afe1ea971137458b49086a23aea14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5d50ef9f032d4cca199f3400cf043bd6') in 0.0226634 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e19bbbca79c9c4c2d3d71ab6c3661adc DependenciesID=541a2d79abc59303ba56dc03f3ddb2ef StaticDependenciesID=381e1ebcae2d329710d6b2c28283bae4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Materials
+  importAddress: Guid(e5a63be753497564491d18960755a602) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Human Basic Motions/Materials using Guid(e5a63be753497564491d18960755a602) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fbe38385b6f95be7bf090ec2fefc729e') in 0.0088873 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=511ff39b8a76c762ee6756a0ea2197c6 DependenciesID=eaa87a07b328f1e1c4c8cb11a3d6b45b StaticDependenciesID=71668b296350caf99c79c2cd3cb09e8a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_ForwardLeft.fbx
+  importAddress: Guid(cdb2264de10c42b4799822b736b5de9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Run/HumanF@Run01_ForwardLeft.fbx using Guid(cdb2264de10c42b4799822b736b5de9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a1a6088f6fbb9a296f95596efddb56de') in 0.0257032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f366344a902dde011d4066465106e01 DependenciesID=0a1ac91f4bdcfb7e3fbd956b157393c8 StaticDependenciesID=87b52b297b7c3fc7540281019c3a5b89 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_Backward [RM].fbx
+  importAddress: Guid(e63154bedee9a5f48aaca17e98adc5ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/RootMotion/HumanM@Walk01_Backward [RM].fbx using Guid(e63154bedee9a5f48aaca17e98adc5ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ae49aa37c7a9721fead08cb812a7a038') in 0.0257481 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ca854a35e1b5ec2be3a59d13d1d01a26 DependenciesID=94c91dad898e65fa8ae2f3fc63c1cc57 StaticDependenciesID=0c925a5a68c7596814995a0b66da0654 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 [RM].fbx
+  importAddress: Guid(33332cc79a8e983428d3ba32af4c8997) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Jump/HumanF@Jump01 [RM].fbx using Guid(33332cc79a8e983428d3ba32af4c8997) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e94aa655f463a7fad6821c82586968ee') in 0.0266334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c67aa61cac0d10e1c570a4b39dc7b91 DependenciesID=849491a1a155b17e10f443746f13c72d StaticDependenciesID=5d01e246fefb93cc6b67ed4ecc8c6b1c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Forward.fbx
+  importAddress: Guid(c133e3c197c12e04a9dd23bd0966910f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Walk/HumanM@Walk01_Forward.fbx using Guid(c133e3c197c12e04a9dd23bd0966910f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e5e58ae7967d3e8685fb17d04f387d5f') in 0.0196644 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa0b73e12ee38131c901575af76aa9fd DependenciesID=ffbf61d2f8d0c95113f49e30f07c3eda StaticDependenciesID=0db8070e9737cc4e5f66b9184afbe625 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_BackwardLeft.fbx
+  importAddress: Guid(daf6bb02eddf35e4e8cfcb493de60917) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Walk/HumanF@Walk01_BackwardLeft.fbx using Guid(daf6bb02eddf35e4e8cfcb493de60917) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a17c09d3116dfe89af372ade65204570') in 0.023412 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=952ea12eafc57c0194dc2fc7482405d1 DependenciesID=96f7be30e7263105ae27cfee6e099cbb StaticDependenciesID=25d91583276ff5fce55e718d641e40d0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle01-Idle02.fbx
+  importAddress: Guid(f3894581926850a43be23e43d5465af5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Idles/HumanF@Idle01-Idle02.fbx using Guid(f3894581926850a43be23e43d5465af5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '42a06ad015d41e94d1791b3f22de0b98') in 0.0222084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ca31888b1ca99c69183202e164511ff DependenciesID=f851aaf20791aba46630e018d0045fd7 StaticDependenciesID=509f87c55c1ab70bad71f69cce2b58b8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hand Left Mask.mask
+  importAddress: Guid(b7a9bc6acd2eaa941ab64d230864a316) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Models/Avatar Masks/Hands/Human Hand Left Mask.mask using Guid(b7a9bc6acd2eaa941ab64d230864a316) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5657ce10d00b2e1fdb67e9c8ac5acdac') in 0.0119783 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=98ecd9b7f1e5fe5f9c8939811b06df46 DependenciesID=c3ca4f8f8783d71db2d1f6f64a7fa35a StaticDependenciesID=92e55660d973cfdb9d3ea2a958e6c50e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_ForwardRight.fbx
+  importAddress: Guid(eb3f1eb7170e5f747b4e1f47de1dbe5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Female/Movement/Sprint/HumanF@Sprint01_ForwardRight.fbx using Guid(eb3f1eb7170e5f747b4e1f47de1dbe5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1c75fb06aac572960fb78cde83c166e2') in 0.0168552 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=59afae533d12d6306b57a652fbccae78 DependenciesID=95efbed53d4b6aa6bcf58435127b8b7f StaticDependenciesID=ee06b79cd186f4b0f7e4792bd318601e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_Left.fbx
+  importAddress: Guid(f194a505473e7aa469db0682217fa7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Kevin Iglesias/Human Animations/Animations/Male/Movement/Sprint/HumanM@Sprint01_Left.fbx using Guid(f194a505473e7aa469db0682217fa7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dbda3e60cdec92bc6b3930e68f28ea9d') in 0.0207213 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=826bc8a9f37f3d263ccfc32606c2a264 DependenciesID=ebc6b415302dbde67a34aeea7f271c9b StaticDependenciesID=5e04e18e0a37150d3f6103bb42bef2fb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.65 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4143 unused Assets / (163.6 KB). Loaded Objects now: 4746.
+Memory consumption went from 102.7 MB to 102.6 MB.
+Total: 35.134600 ms (FindLiveObjects: 0.392200 ms CreateObjectMapping: 0.256100 ms MarkObjects: 28.557800 ms  DeleteObjects: 5.926800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.092463 seconds.
+  path: Assets/02. Scripts/CircularRunnerControl.cs
+  importAddress: Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02. Scripts/CircularRunnerControl.cs using Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8497db74565a55bfd15cdfa04f20bdc0') in 0.0011002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c761365d1a1e800116bb4d2abdc30dea DependenciesID=23b86b96af8c9c49c61e89910077edb0 StaticDependenciesID=737655d667acb7f50c42848c8797de56 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 5.31 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.682 seconds
+Domain Reload Profiling: 2148ms
+	BeginReloadAssembly (548ms)
+		DisableScriptedObjects (6ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (202ms)
+	LoadAllAssembliesAndSetupDomain (647ms)
+		LoadAssemblies (823ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (185ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (682ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (293ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 4.53 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4153 unused Assets / (1.2 MB). Loaded Objects now: 4747.
+Memory consumption went from 102.0 MB to 100.8 MB.
+Total: 6.215900 ms (FindLiveObjects: 0.579900 ms CreateObjectMapping: 0.346100 ms MarkObjects: 4.085100 ms  DeleteObjects: 1.202900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.41 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4143 unused Assets / (165.5 KB). Loaded Objects now: 4748.
+Memory consumption went from 102.3 MB to 102.1 MB.
+Total: 8.417300 ms (FindLiveObjects: 0.486400 ms CreateObjectMapping: 0.386600 ms MarkObjects: 6.192000 ms  DeleteObjects: 1.350600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 6.38 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.897 seconds
+Domain Reload Profiling: 2255ms
+	BeginReloadAssembly (391ms)
+		DisableScriptedObjects (19ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (208ms)
+	LoadAllAssembliesAndSetupDomain (703ms)
+		LoadAssemblies (711ms)
+		AnalyzeDomain (199ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (179ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (898ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (212ms)
+			ProcessInitializeOnLoadAttributes (357ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (22ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 6.08 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4154 unused Assets / (0.6 MB). Loaded Objects now: 4749.
+Memory consumption went from 102.3 MB to 101.7 MB.
+Total: 8.322500 ms (FindLiveObjects: 0.465900 ms CreateObjectMapping: 0.563800 ms MarkObjects: 6.326700 ms  DeleteObjects: 0.964300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.10 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4143 unused Assets / (353.7 KB). Loaded Objects now: 4749.
+Memory consumption went from 102.7 MB to 102.3 MB.
+Total: 9.055000 ms (FindLiveObjects: 0.640200 ms CreateObjectMapping: 0.558300 ms MarkObjects: 6.417400 ms  DeleteObjects: 1.436600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 141.885436 seconds.
+  path: Assets/02. Scripts/CircularRunnerControl.cs
+  importAddress: Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02. Scripts/CircularRunnerControl.cs using Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd7ef5dbb5729162d2f3534a9d59c47e5') in 0.0036746 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c761365d1a1e800116bb4d2abdc30dea DependenciesID=a42c02c30ccb8fc7c4cdf43a84debcf5 StaticDependenciesID=c0c0e3cb37e067cd2f469a74208e0611 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.44 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4143 unused Assets / (0.9 MB). Loaded Objects now: 4749.
+Memory consumption went from 102.2 MB to 101.3 MB.
+Total: 10.138300 ms (FindLiveObjects: 0.492000 ms CreateObjectMapping: 0.578500 ms MarkObjects: 7.729900 ms  DeleteObjects: 1.334600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 9.11 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.308 seconds
+Domain Reload Profiling: 2815ms
+	BeginReloadAssembly (397ms)
+		DisableScriptedObjects (9ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (187ms)
+	LoadAllAssembliesAndSetupDomain (836ms)
+		LoadAssemblies (809ms)
+		AnalyzeDomain (257ms)
+			TypeCache.Refresh (16ms)
+			BuildScriptInfoCaches (231ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1309ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (302ms)
+			ProcessInitializeOnLoadAttributes (566ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (31ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 7.23 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4154 unused Assets / (1.1 MB). Loaded Objects now: 4750.
+Memory consumption went from 102.2 MB to 101.0 MB.
+Total: 8.376900 ms (FindLiveObjects: 0.506200 ms CreateObjectMapping: 0.481100 ms MarkObjects: 5.246600 ms  DeleteObjects: 2.141700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.169 seconds
+Domain Reload Profiling: 2304ms
+	BeginReloadAssembly (294ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (678ms)
+		LoadAssemblies (638ms)
+		AnalyzeDomain (216ms)
+			TypeCache.Refresh (13ms)
+			BuildScriptInfoCaches (195ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1170ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (256ms)
+			ProcessInitializeOnLoadAttributes (522ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (26ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 8.50 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4154 unused Assets / (1.5 MB). Loaded Objects now: 4751.
+Memory consumption went from 102.4 MB to 100.9 MB.
+Total: 8.865600 ms (FindLiveObjects: 0.614500 ms CreateObjectMapping: 0.375800 ms MarkObjects: 5.451300 ms  DeleteObjects: 2.421300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.59 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4143 unused Assets / (165.6 KB). Loaded Objects now: 4751.
+Memory consumption went from 102.7 MB to 102.5 MB.
+Total: 10.053900 ms (FindLiveObjects: 0.554500 ms CreateObjectMapping: 0.414400 ms MarkObjects: 7.746700 ms  DeleteObjects: 1.336400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1445.827709 seconds.
+  path: Assets/02. Scripts/CircularRunnerControl.cs
+  importAddress: Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02. Scripts/CircularRunnerControl.cs using Guid(1a7172ebe03ac3f439205985d333165b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5a044de3cf1221f16974e577b2ef36c2') in 0.003922 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c761365d1a1e800116bb4d2abdc30dea DependenciesID=537b9cf2535121514674bacf00658fc2 StaticDependenciesID=ab0c536238ce7fb54028bdd292696579 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 7.99 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.477 seconds
+Domain Reload Profiling: 2969ms
+	BeginReloadAssembly (401ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (171ms)
+	LoadAllAssembliesAndSetupDomain (826ms)
+		LoadAssemblies (808ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (234ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1478ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (412ms)
+			ProcessInitializeOnLoadAttributes (604ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (52ms)
+		AwakeInstancesAfterBackupRestoration (74ms)
+Refreshing native plugins compatible for Editor in 12.41 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4154 unused Assets / (1.0 MB). Loaded Objects now: 4752.
+Memory consumption went from 102.0 MB to 101.0 MB.
+Total: 9.504900 ms (FindLiveObjects: 0.491800 ms CreateObjectMapping: 0.383700 ms MarkObjects: 6.519500 ms  DeleteObjects: 2.108100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Performance.Profile-Analyzer.EditorTests.dll at Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TestTools.CodeCoverage.Editor.Compatibility.dll at Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.Compatibility.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 7.82 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.316 seconds
+Domain Reload Profiling: 2885ms
+	BeginReloadAssembly (412ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (191ms)
+	LoadAllAssembliesAndSetupDomain (876ms)
+		LoadAssemblies (822ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (8ms)
+			BuildScriptInfoCaches (271ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1317ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (412ms)
+			ProcessInitializeOnLoadAttributes (427ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (20ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 6.49 ms, found 4 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4154 unused Assets / (0.8 MB). Loaded Objects now: 4753.
+Memory consumption went from 102.2 MB to 101.4 MB.
+Total: 7.345700 ms (FindLiveObjects: 0.778800 ms CreateObjectMapping: 0.513900 ms MarkObjects: 4.696200 ms  DeleteObjects: 1.354900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportWorkerClient::OnTransportError - code=10054 error=ÇöÀç ¿¬°áÀº ¿ø°Ý È£½ºÆ®¿¡ ÀÇÇØ °­Á¦·Î ²÷°å½À´Ï´Ù.
