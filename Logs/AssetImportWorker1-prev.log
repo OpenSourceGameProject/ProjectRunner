@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.6f1 (0b051c2e5d54) revision 722204'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 16023 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple" at "2026-05-13T14:26:12.4491784Z"
+OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 63062 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-13T08:20:24Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54" at "2026-05-13T08:20:24.4579573Z"
+Date: 2026-05-13T14:26:12Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
@@ -15,24 +15,24 @@ C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/woo54/ShiftRunner/ProjectRunner
+C:/GitProject1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55277
+58561
 -licensingIpc
-LicenseClient-woo54
+LicenseClient-apple
 -force-d3d12
 -job-worker-count
-3
+15
 -background-job-worker-count
 8
 -gc-helper-count
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/woo54/ShiftRunner/ProjectRunner
-C:/Users/woo54/ShiftRunner/ProjectRunner
+Successfully changed project path to: C:/GitProject1
+C:/GitProject1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -68,13 +68,13 @@ C:/Users/woo54/ShiftRunner/ProjectRunner
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [13980]  Target information:
+Player connection [56052]  Target information:
 
-Player connection [13980]  * "[IP] 172.16.30.236 [Port] 0 [Flags] 2 [Guid] 1631249647 [EditorId] 1631249647 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6SJNF32) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [56052]  * "[IP] 192.168.45.63 [Port] 0 [Flags] 2 [Guid] 3010634658 [EditorId] 3010634658 [Version] 1048832 [Id] WindowsEditor(7,Áö½ÃÇö) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [13980] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [13980] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [56052] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [56052] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -85,80 +85,80 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 50.89 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.43 ms, found 4 plugins.
 Initialize engine version: 6000.4.6f1 (0b051c2e5d54)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/woo54/ShiftRunner/ProjectRunner/Assets
+[Subsystems] Discovering subsystems at path C:/GitProject1/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
-    Version:         Direct3D 12 [level 12.1]
-    Renderer:        Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:          Intel
-    VRAM:            8011 MB
-    App VRAM Budget: 7355 MB
-    Driver:          30.0.100.9864
-    Unified Memory Architecture
-    Cache Coherent UMA
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5080 (ID=0x2c02)
+    Vendor:          NVIDIA
+    VRAM:            15977 MB
+    App VRAM Budget: 15209 MB
+    Driver:          32.0.15.9186
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.063416 seconds.
+Registered in 0.003547 seconds.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-apple"
+[Licensing::IpcConnector] LicenseClient-apple channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple-6000.4.6" at "2026-05-13T14:26:13.7947443Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 41328, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              d56da9a23f87419aa0145df0a3d4fdf3
+  Correlation Id:          822c03f6811857d9ee15fc02d6aaedcd
+  External correlation Id: 8596544627168410808
+  Machine Id:              u+5c1vbJpLD761VzxK6sTTT2SE8=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-apple-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-apple-6000.4.6-notifications" at "2026-05-13T14:26:13.805466Z"
+[Licensing::Module] Licensing Background thread has ended after 1.36s
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.266 seconds
-Domain Reload Profiling: 9413ms
-	BeginReloadAssembly (3141ms)
-	RebuildCommonClasses (377ms)
-	RebuildNativeTypeToScriptingClass (107ms)
-	initialDomainReloadingComplete (1208ms)
-	LoadAllAssembliesAndSetupDomain (1307ms)
-		LoadAssemblies (3098ms)
-		AnalyzeDomain (1266ms)
-			TypeCache.Refresh (1261ms)
-				TypeCache.ScanAssembly (1177ms)
-	FinalizeReload (3273ms)
+- Finished resetting the current domain, in  0.264 seconds
+Domain Reload Profiling: 657ms
+	BeginReloadAssembly (123ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (117ms)
+		AnalyzeDomain (152ms)
+			TypeCache.Refresh (150ms)
+				TypeCache.ScanAssembly (137ms)
+	FinalizeReload (265ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (222ms)
-			BeforeProcessingInitializeOnLoad (902ms)
-			ProcessInitializeOnLoadAttributes (476ms)
-			ProcessInitializeOnLoadMethodAttributes (1339ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (67ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-woo54"
-[Licensing::IpcConnector] LicenseClient-woo54 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54-6000.4.6" at "2026-05-13T08:20:41.5190979Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27652, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              a49cbcaa35c64b6e9690e74ee970b6ff
-  Correlation Id:          e06b82012780ac8acca386c2461dca99
-  External correlation Id: 4824193685433879190
-  Machine Id:              ESQUOVeMcbrJas9wvzRmuqFD1AA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-woo54-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.11s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-woo54-6000.4.6-notifications" at "2026-05-13T08:20:41.6322222Z"
-[Licensing::Module] Licensing Background thread has ended after 17.20s
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 14569623918176-UnityPersXXXX
+  Id: 14569749878227-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -178,141 +178,172 @@ Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshP
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 24.54 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 17.64 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.821 seconds
-Domain Reload Profiling: 8303ms
-	BeginReloadAssembly (1345ms)
-		DisableScriptedObjects (51ms)
-		CreateAndSetChildDomain (96ms)
-	RebuildCommonClasses (166ms)
-	RebuildNativeTypeToScriptingClass (41ms)
-	initialDomainReloadingComplete (713ms)
-	LoadAllAssembliesAndSetupDomain (2210ms)
-		LoadAssemblies (2330ms)
-		AnalyzeDomain (777ms)
-			TypeCache.Refresh (648ms)
-				TypeCache.ScanAssembly (600ms)
-			BuildScriptInfoCaches (112ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (3828ms)
+- Finished resetting the current domain, in  0.402 seconds
+Domain Reload Profiling: 1060ms
+	BeginReloadAssembly (171ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (366ms)
+		LoadAssemblies (314ms)
+		AnalyzeDomain (137ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (98ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (402ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (719ms)
-			ProcessInitializeOnLoadAttributes (1514ms)
-			ProcessInitializeOnLoadMethodAttributes (227ms)
-			AfterProcessingInitializeOnLoad (88ms)
-		AwakeInstancesAfterBackupRestoration (31ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 30.11 ms, found 4 plugins.
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.90 ms, found 4 plugins.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4151 unused Assets / (160.2 KB). Loaded Objects now: 4737.
-Memory consumption went from 96.0 MB to 95.8 MB.
-Total: 39.205900 ms (FindLiveObjects: 2.065600 ms CreateObjectMapping: 1.716000 ms MarkObjects: 28.452700 ms  DeleteObjects: 6.965900 ms)
+Unloading 4151 unused Assets / (1.2 MB). Loaded Objects now: 4738.
+Memory consumption went from 98.8 MB to 97.6 MB.
+Total: 6.141900 ms (FindLiveObjects: 0.883400 ms CreateObjectMapping: 0.119800 ms MarkObjects: 3.918300 ms  DeleteObjects: 1.216300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 186301.888492 seconds.
-  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.prefab
-  importAddress: Guid(6f3dae64f3a059246857ceb960554118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.prefab using Guid(6f3dae64f3a059246857ceb960554118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '41b67c207989aa1ebf7ce53fdb78e089') in 0.4591743 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=699154d99ab57f6d471ab6ca2870a430 DependenciesID=787de1d687a3bb37594c8ee4ad5250ef StaticDependenciesID=619d901a05441c3e47fdcbb22a2d4e5a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  Time since last request: 11810.374406 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.fbx
+  importAddress: Guid(b96115f275001ca4e8517fbec2210b60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.fbx using Guid(b96115f275001ca4e8517fbec2210b60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9c8e1ee4027c7b616d9175881869b141') in 0.1184998 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f6500e66f29f151138055ebdaca4706a DependenciesID=a359c5e731b907f917321b8a439b2d80 StaticDependenciesID=4ba34bbcb96d0646d37e9a567d4d6cc1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Suit_A.mat
-  importAddress: Guid(bf456465095d57a45af160ba6a0b9ae9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Suit_A.mat using Guid(bf456465095d57a45af160ba6a0b9ae9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1cd77e32c6b9d8cb139fe8427143a39d') in 0.6311742 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c1ed32356e8f6a23b3171faa495b3da DependenciesID=d015b24a427d7d261d8a7f90173efcb6 StaticDependenciesID=d9b19f5fce642270563d349254220255 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/idle.anim
-  importAddress: Guid(ce3236fcdfa90a24399aaf5745615a91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Animation/idle.anim using Guid(ce3236fcdfa90a24399aaf5745615a91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b79a7bca189130839408b99c697e5f00') in 0.1153503 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=295ed13071ecf5a083b4598e98e79ae7 DependenciesID=86d51b5f550ccb7ea5fe5a367c3c59b8 StaticDependenciesID=c48e503b1aa69c7438b669cdad0d857e 
+  Time since last request: 0.000020 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Emissive.png
+  importAddress: Guid(51e0d6182e2f1ab4a9f6cadcfa513d23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Emissive.png using Guid(51e0d6182e2f1ab4a9f6cadcfa513d23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c4fb8c86fc40adaf2ca2b4428b6c62f9') in 0.036452 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3eae8728151018aa73bebdb6381088ab DependenciesID=2a7f0aae66e58ae01a80b7c92137490c StaticDependenciesID=98a254fe768cd6ef3437b142b52d32a4 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008661 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Scenes/Futuristic_Girl_Demo.unity
-  importAddress: Guid(572064dc57b455143a7ecdb67e495717) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Scenes/Futuristic_Girl_Demo.unity using Guid(572064dc57b455143a7ecdb67e495717) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '715ddbc8ee26883e5ce4872459520451') in 0.070011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82d658dd1494e278d51ed820798d9455 DependenciesID=661e825b127428dc8783ae26dba2b514 StaticDependenciesID=f8c5b3e41a077600ed1661bed4143bbf 
+  Time since last request: 0.000017 seconds.
+  path: Assets/red.mat
+  importAddress: Guid(ac6ffc59a348f6945aa63d273e7e6ff2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/red.mat using Guid(ac6ffc59a348f6945aa63d273e7e6ff2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c1ec06335efbed6f0191a22fe36bab5c') in 0.0441169 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=db42043554ed85a1489d16985c00ba7f DependenciesID=dfb06e042b7ec388da0b144da2c25c76 StaticDependenciesID=416e4778d8157b8958725cef113d1003 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004360 seconds.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat
+  importAddress: Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/FuturistiÑ_Girl_Armor_Mask2.mat using Guid(75fe6e20863eaa54da340557ad496fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '907c58a758f1f96ec3b01d0560b5a958') in 0.0218848 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b201fedf00455324153291cb369061bf DependenciesID=ed64822539eee1dbaa5b4193783fbdeb StaticDependenciesID=47b60b0d14f552515a654f98dbb327ae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
   path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Armor_Mask2.png
   importAddress: Guid(1f943dac066bda3409132000ae309b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Armor_Mask2.png using Guid(1f943dac066bda3409132000ae309b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'af656b085b9dcfa0dd57292f3c77f07c') in 0.255983 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a01d40189d218b363b2b337ea99aa03d DependenciesID=3a03078e3bb0d9f20bcb89f7c8a51b4c StaticDependenciesID=4c4831b8d1500e492b954e989334d75e 
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Armor_Mask2.png using Guid(1f943dac066bda3409132000ae309b34) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8b1bd8f4926f80dbf941e9c01980a3a8') in 0.016793 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7c82a520e1d284a2d768123065920308 DependenciesID=545c31622ab3a77bc39e2a8ae24aba87 StaticDependenciesID=b2ea5e41a6421f6e039bf354a44755c4 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000892 seconds.
-  path: Assets/03. Prefabs/Foe_creature.prefab
-  importAddress: Guid(999c9df1ae9ff0641a8369f4be6b7ed5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/03. Prefabs/Foe_creature.prefab using Guid(999c9df1ae9ff0641a8369f4be6b7ed5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a425313486397796556eb1c271872a82') in 0.2269095 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05f23ffad2b8117a2ec636e77a98a237 DependenciesID=e30b74a4cd801a5cc5c5ad84b202fc8d StaticDependenciesID=2e50b8124a1a5775ae95125b1404a8c0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 150
+  Time since last request: 0.000059 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/RenderSupport/URP.unitypackage
+  importAddress: Guid(9275ab1448dd2354c8d5728a30c28fb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/RenderSupport/URP.unitypackage using Guid(9275ab1448dd2354c8d5728a30c28fb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6b722f387106af0f07c8b03a49261c52') in 0.0093841 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4feb3894dde392477847d587161224a7 DependenciesID=49d145e2f520716c217f94bfdab6b63d StaticDependenciesID=520eafb32556160ad1eecb43d775db33 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Mesh/Foe_creature.fbx
-  importAddress: Guid(cccdb3f0c50f02d4f9beb307700c6823) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Mesh/Foe_creature.fbx using Guid(cccdb3f0c50f02d4f9beb307700c6823) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fa275a4c4bb5888c6e92a97a09d4d97d') in 0.1417564 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=957282bf36db5d6d834133feedcb79a9 DependenciesID=2a17322f12fc28283211271a3e68fe29 StaticDependenciesID=b773e8e5ae0047ca14a0de678e1a8157 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 73
+  Time since last request: 0.000054 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_A.png
+  importAddress: Guid(4fb2f94fa869be14ca3cb2c9aec3828a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_A.png using Guid(4fb2f94fa869be14ca3cb2c9aec3828a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a910699fe8082215618d8cd75ba6a8d3') in 0.0161545 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2c74d4b1162c470314219469fedf5475 DependenciesID=6113b615859ec40c5f1e622632121900 StaticDependenciesID=5625463df7dbc2dfaf5c47d2ddd6b59d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Mesh/Futuristic_Girl.fbx
-  importAddress: Guid(576238d73bcc1ca48a6a5f45a6f0b1fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Mesh/Futuristic_Girl.fbx using Guid(576238d73bcc1ca48a6a5f45a6f0b1fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '28d4c2502c619d0b09967b60572505e8') in 0.1658789 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3c2b097c56166809f861851b111d4659 DependenciesID=f348c94a8cff71444fcb88ca3bfd5438 StaticDependenciesID=ae07d02f53551fba69f8d43f9202b2c1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 168
+  Time since last request: 0.000019 seconds.
+  path: Assets/11.unity
+  importAddress: Guid(583073f6043aa644ba33925198caba41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/11.unity using Guid(583073f6043aa644ba33925198caba41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bc3e47dfa46c53f1e7a2606dc99d1563') in 0.0103554 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a9fbf5e20c7fb6dec34f4052234c5431 DependenciesID=6a0d3f93ad1f82d4a590645cc8ce39f5 StaticDependenciesID=22f3dba6c615a94b73b72cc08e01399c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Prefabs/Futuristic_Girl Blue.prefab
-  importAddress: Guid(b3e4b7ddffd500f40b065aebcfe9c9a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Prefabs/Futuristic_Girl Blue.prefab using Guid(b3e4b7ddffd500f40b065aebcfe9c9a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7ce4601e570d57c93cc4019abcacc275') in 0.1151484 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4b336eec38652e0af38f6d6f1004859c DependenciesID=8f839ad5b2efc4ebaba56431d9bdd1e0 StaticDependenciesID=2f61419e9269da56483746d1a10f024a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 166
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001284 seconds.
-  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_MetallicSmoothness.png
-  importAddress: Guid(845c722bde4eeef49aa8a91d0c24cbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_MetallicSmoothness.png using Guid(845c722bde4eeef49aa8a91d0c24cbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ec32d6882d7e47527b9846dd6e13da9c') in 0.1484703 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=29093908cb6365c1b0f2a292e1101db3 DependenciesID=2cdb75f21d861316297412026db15f76 StaticDependenciesID=6f1ec214e0be4618d6b8a7c64efaa875 
+  Time since last request: 0.000050 seconds.
+  path: Assets/AlexMakes3D/Shaders/Built-in/AdvancedCharacterShader.shader
+  importAddress: Guid(e7dd233ff5eb69548b2c18e34748a2ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Shaders/Built-in/AdvancedCharacterShader.shader using Guid(e7dd233ff5eb69548b2c18e34748a2ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4611cec2acdc73379ac2a50078f95e81') in 0.0125569 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9bb2cc97853ff46040535906cc4facab DependenciesID=92fc98db90e58635e8ddbc5cd3c6521d StaticDependenciesID=081c21ef410f0fd2f7fb754191158e68 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000040 seconds.
-  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Armor Green.mat
-  importAddress: Guid(c8116885ada19884d8c76024a27072fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Armor Green.mat using Guid(c8116885ada19884d8c76024a27072fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a9e2a76b4b14974049703516608c163f') in 0.6558113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f720b457b4cf9fe7b83aa3bd15bd1493 DependenciesID=0a8ed862571adffb7a400f0a7b4d8142 StaticDependenciesID=1cf2aa8984fb6a235ef91215251498f3 
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_B.png
+  importAddress: Guid(2842c848ad83b6d4aadf8f2ffcd44910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_AlbedoTransparency_B.png using Guid(2842c848ad83b6d4aadf8f2ffcd44910) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b61504f297c0baf42d170125e395852f') in 0.0161962 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=45e919c1431352777a4822a3b13fe713 DependenciesID=2995d3903eed3ad0e66cd8ea0a15db68 StaticDependenciesID=78b42323edb841ca2ccf38f7c78e2ef2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/green.mat
+  importAddress: Guid(d1d3bbd5313511d46a20abb7032dcb9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/green.mat using Guid(d1d3bbd5313511d46a20abb7032dcb9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '72e69156dfb81b4fa3e71121611054ac') in 0.0136937 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f9d39034fb89be2851b7a10e2eade2c3 DependenciesID=afdd0523b7da47e7cbe15e3d480ea7d3 StaticDependenciesID=159b1a6381b966af01d195bb5e886293 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/yellow.mat
+  importAddress: Guid(fd1cd88443f879b468e5d4b6dc81a434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/yellow.mat using Guid(fd1cd88443f879b468e5d4b6dc81a434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '35309e2cfb2ec413b1a12fffcfb5ee36') in 0.0147038 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01a4f2224ef156de4b23a8e73d6d5753 DependenciesID=b6f284d942077f850fe7965faf6e9288 StaticDependenciesID=f31b4e43d4dfd3f1a5217d649a32961d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Armor Pink.mat
+  importAddress: Guid(d71e449c7909fd541a3cb7f499a66ae2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Materials/Futuristic_Girl_Armor Pink.mat using Guid(d71e449c7909fd541a3cb7f499a66ae2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dfc64a76f879cbe6b76bfb85d8088c3e') in 0.0612467 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0cfb4a42492fe339cf790bf650ee6a25 DependenciesID=5e854261931a0dd986c072d15a30e9ad StaticDependenciesID=d145c46641e1ba8752ad7fbc639fec01 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.mat
-  importAddress: Guid(22049253e45f1f64581aa91ed77e78be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Scene/BackDrop/BackDrop.mat using Guid(22049253e45f1f64581aa91ed77e78be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '98ce78d1769b019bf402d2342724147e') in 0.1992391 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3146b7c7d8b3a91d3e86752dda2a4382 DependenciesID=4e07280151a0bff7b44decf89b756f69 StaticDependenciesID=7be0ef864a4bb2c5546609d8c4e1ae54 
+  Time since last request: 0.000033 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Color.png
+  importAddress: Guid(ae8854d4eebe8774e82bdb50e9c6451f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/Texture/Foe_Color.png using Guid(ae8854d4eebe8774e82bdb50e9c6451f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '175e87db3659b2e3cb894ddf15866f55') in 0.017675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c1e12d73cedc51b7862bea27d132b9be DependenciesID=86c6c60d30e33f7cc644e0cfae6c2b8d StaticDependenciesID=35f768a46d0a7ca786af1ca8c590d7c9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/My_Assets/Nomadic_UV/Foe_Creature/ReadMe.txt
+  importAddress: Guid(906d2a1e739d5694091ba0919fb02437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/My_Assets/Nomadic_UV/Foe_Creature/ReadMe.txt using Guid(906d2a1e739d5694091ba0919fb02437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6c8129dcbb0834790c884c3a41fde336') in 0.0108245 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=50a362333935e5be65ae31b8d8997520 DependenciesID=d8fed4f8b96501f8f900d729e3513339 StaticDependenciesID=968fa0634703ae01f3eae9b1189c0429 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_MaskMap.png
+  importAddress: Guid(e37fc0ae219c7f44eb011016efcce1c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/AlexMakes3D/Characters/Futuristic girl/Textures/FuturistiÑ_Girl_Suit_MaskMap.png using Guid(e37fc0ae219c7f44eb011016efcce1c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dea18fc0b4e24410f434936182997b23') in 0.0313206 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=22d767cac748f8b59c1dd2e228d0b9be DependenciesID=96d00300a6db4b815f8af8110b74b869 StaticDependenciesID=ca2a46c6e75a813b3282e6c045b1876d 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
