@@ -4,7 +4,9 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Logs]/
+/[Ll]og/
+/[Ll]ogs/
+/UserSettings/
 /[MemoryCaptures]/
 
 # 에셋 스토어 
