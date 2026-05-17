@@ -26,3 +26,8 @@ ExportedObj/
 # OS
 .DS_Store
 Thumbs.db
+
+# Unity 관련 불필요한 로그 및 유저 설정 제외
+[Log]s/
+[L|l]ogs/
+UserSettings/
