@@ -25,13 +25,13 @@ namespace ShiftRunner.Item {
 
         private void OnTriggerEnter(Collider other) {
             if (other.CompareTag(Item.Tag)) return;
-            if (!other.TryGetComponent(out IItem item)) {
+            if (!other.TryGetComponent(out ItemBehaviour itemObject)) {
                 // why?
 
                 return;
             }
 
-            item.OnCollected(this);
+            itemObject.Collect(this);
         }
     }
 }

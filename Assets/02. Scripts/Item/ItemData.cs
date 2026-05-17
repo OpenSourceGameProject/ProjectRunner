@@ -7,8 +7,6 @@ namespace ShiftRunner.Item {
         public string DisplayName { get; private set; }
 
         [field: SerializeField]
-        public ItemStoreType StoreType { get; private set; }
-
-        
+        public ItemType Type { get; private set; }
     }
 }
