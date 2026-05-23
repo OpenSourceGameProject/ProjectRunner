@@ -696,7 +696,7 @@ MonoBehaviour:
   - 10
   - 12
   startingTrackIndex: 1
-  runSpeed: 60
+  runSpeed: 30
   laneSwitchSpeed: 10
   jumpForce: 6
   gravity: -15
