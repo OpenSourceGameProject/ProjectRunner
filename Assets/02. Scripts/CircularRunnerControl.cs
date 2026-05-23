@@ -41,6 +41,22 @@ public class CircularRunnerController : MonoBehaviour
         currentRadius = trackRadii[currentTrackIndex];
         baseY = transform.position.y;
 
+        // 인스펙터 창에서 trackCenter가 연결되어 있지 않다면(None), 씬에서 이름으로 자동 검색합니다.
+        if (trackCenter == null)
+        {
+            // 하이어라키 창에 설정하신 이름인 "CircleCenter"로 정확하게 찾아옵니다.
+            GameObject centerObject = GameObject.Find("CircleCenter");
+
+            if (centerObject != null)
+            {
+                trackCenter = centerObject.transform;
+            }
+            else
+            {
+                Debug.LogError("씬에서 'CircleCenter'라는 이름의 오브젝트를 찾을 수 없습니다! 오타가 없는지 확인해주세요.");
+            }
+        }
+
         if (trackCenter != null)
         {
             Vector3 dir = transform.position - trackCenter.position;
