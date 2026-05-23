@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem; // 최신 input System을 사용하기 위함
 
 public class PlayerCollision : MonoBehaviour
 {

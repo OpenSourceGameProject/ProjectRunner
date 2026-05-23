@@ -36,10 +36,19 @@ public class UI_Hearts : MonoBehaviour
 
             Debug.Log($"💔 하트가 감소했습니다! 남은 하트: {currentHearts}");
 
-            if (currentHearts <= 0)
+            if (currentHearts <= 0) // 하트 수가 0 이하가 된다면 (=게임오버)
             {
                 Debug.Log("💀 GAME OVER! 목숨을 모두 잃었습니다.");
-                // 게임 오버 창 띄우는 코드 넣기
+                // 게임 오버 창 띄우는 코드
+
+                // 시간에 따른 스코어 자동 증가를 멈춤
+                if (UI_Score.Instance != null)
+                {
+                    UI_Score.Instance.StopScore();
+                }
+
+                // 유니티 전체 시간을 0으로 만들어서 게임의 물리/스폰/움직임을 모두 멈춤
+                Time.timeScale = 0f;
             }
         }
     }
