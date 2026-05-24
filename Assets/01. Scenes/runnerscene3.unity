@@ -17230,20 +17230,20 @@ PrefabInstance:
       value: CircleCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7817492103711502507, guid: 308b069cf76636748850f3821e5cb659, type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
+      propertyPath: m_NormalizedViewPortRect.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817492103711502507, guid: 308b069cf76636748850f3821e5cb659, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7817492103711502507, guid: 308b069cf76636748850f3821e5cb659, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7817492103711502507, guid: 308b069cf76636748850f3821e5cb659, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8134009445205940385, guid: 308b069cf76636748850f3821e5cb659, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8986978728727595272, guid: 308b069cf76636748850f3821e5cb659, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17408,6 +17408,14 @@ PrefabInstance:
     - target: {fileID: 4830748562546059969, guid: 32f8b6dd77bdd224ab4bf7d78629368d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685509161363375535, guid: 32f8b6dd77bdd224ab4bf7d78629368d, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685509161363375535, guid: 32f8b6dd77bdd224ab4bf7d78629368d, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062380699983686802, guid: 32f8b6dd77bdd224ab4bf7d78629368d, type: 3}
       propertyPath: m_Name
