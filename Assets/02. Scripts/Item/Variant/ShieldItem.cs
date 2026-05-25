@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShiftRunner.Item {
     public class ShieldItem : Item {
-        private static readonly float duration = 1f;
+        public float Duration { get; set; } = 1f;
         private float timer = 0f;
         private bool active = false;
 
@@ -16,7 +16,7 @@ namespace ShiftRunner.Item {
             if (!active) return;
             timer += deltaTime;
 
-            if (timer >= duration) {
+            if (timer >= Duration) {
                 // remove
 
                 active = false;

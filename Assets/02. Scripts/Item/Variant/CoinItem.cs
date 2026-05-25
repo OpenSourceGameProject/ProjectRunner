@@ -2,10 +2,10 @@ using UnityEngine;
 
 namespace ShiftRunner.Item {
     public class CoinItem : InstantItem {
-        private static readonly int amount = 50;
+        public int Amount { get; set; } = 10;
 
         public override void OnUsed() {
-            UI_Score.Instance.AddScore(amount);
+            UI_Score.Instance.AddScore(Amount);
         }
     }
 }
