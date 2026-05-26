@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 namespace ShiftRunner.Item {
     public class ItemSpawner : MonoBehaviour {
@@ -55,6 +56,8 @@ namespace ShiftRunner.Item {
             }
 
             float currentTime = Time.time;
+
+            using var pool = ListPool<Transform>.Get(out var removeList);
             foreach (var kvp in _contexts) {
                 var spawnPoint = kvp.Key;
                 var context = kvp.Value;
@@ -64,8 +67,12 @@ namespace ShiftRunner.Item {
                         Destroy(spawnPoint.GetChild(0).gameObject);
                     }
                     
-                    _contexts.Remove(spawnPoint);
+                    removeList.Add(spawnPoint);
                 }
+            }
+
+            foreach (var spawnPoint in removeList) {
+                _contexts.Remove(spawnPoint);
             }
         }
 
