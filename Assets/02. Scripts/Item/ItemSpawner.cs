@@ -28,11 +28,16 @@ namespace ShiftRunner.Item {
         private readonly Dictionary<Transform, SpawnContext> _contexts = new();
 
         [SerializeField]
-        private float spawnInterval = 5f;
+        private float minSpawnInterval = 5f;
+
+        [SerializeField]
+        private float maxSpawnInterval = 10f;
+        private float SpawnInterval => UnityEngine.Random.Range(minSpawnInterval, maxSpawnInterval);
+
         private float _spawnTimer = 0f;
 
-        [SerializeField, Range(1f, 10f)]
-        private Vector2 despawnInterval = new(5f, 10f);
+        [SerializeField]
+        private float despawnInterval = 5f;
 
         private void Awake() {
             totalWeights = 0f;
@@ -42,11 +47,11 @@ namespace ShiftRunner.Item {
         }
 
         private void Update() {
-            _spawnTimer += Time.deltaTime;
+            _spawnTimer -= Time.deltaTime;
 
-            if (_spawnTimer >= spawnInterval) {
+            if (_spawnTimer <= 0f) {
                 Spawn();
-                _spawnTimer = 0f;
+                _spawnTimer = SpawnInterval;
             }
 
             float currentTime = Time.time;
@@ -79,7 +84,7 @@ namespace ShiftRunner.Item {
 
                 Instantiate(itemPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
                 _contexts[spawnPoint] = new SpawnContext {
-                    despawnTime = Time.time + UnityEngine.Random.Range(despawnInterval.x, despawnInterval.y)
+                    despawnTime = Time.time + despawnInterval
                 };
             }
         }
