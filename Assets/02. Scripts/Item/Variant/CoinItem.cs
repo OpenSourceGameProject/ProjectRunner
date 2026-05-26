@@ -4,7 +4,7 @@ namespace ShiftRunner.Item {
     public class CoinItem : InstantItem {
         public int Amount { get; set; } = 10;
 
-        public override void OnUsed() {
+        protected override void UseEffect() {
             UI_Score.Instance.AddScore(Amount);
         }
     }

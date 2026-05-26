@@ -21,6 +21,8 @@ namespace ShiftRunner.Item {
 
                 active = false;
                 timer = 0f;
+
+                Release();
             }
         }
     }
