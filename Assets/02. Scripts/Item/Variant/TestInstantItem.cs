@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShiftRunner.Item {
     public class TestInstantItem : InstantItem {
-        public override void OnUsed() {
+        protected override void UseEffect() {
             Debug.Log("TestInstantItem used");
         }
     }

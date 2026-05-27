@@ -27,6 +27,13 @@ namespace ShiftRunner.Item {
         }
 
         public virtual void OnTick(float deltaTime) { }
-        public abstract void OnUsed();
+
+        public virtual void OnUsed() {
+            Release();
+        }
+
+        public void Release() {
+            Data = null;
+        }
     }
 }

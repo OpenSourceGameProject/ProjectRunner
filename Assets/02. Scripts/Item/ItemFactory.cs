@@ -9,6 +9,10 @@ namespace ShiftRunner.Item {
                 ItemType.TestItem => new TestItem(),
                 ItemType.TestInstantItem => new TestInstantItem(),
 
+                ItemType.Coin => new CoinItem(),
+                ItemType.Shield => new ShieldItem(),
+                ItemType.Bomb => new BombItem(),
+
                 // exception
                 _ => throw new System.ArgumentException($"Unsupported ItemType: {data.Type}")
             };
