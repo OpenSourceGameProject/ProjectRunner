@@ -19937,7 +19937,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2888676044745662853, guid: d22d9e093892d7b4b90e9351acc6a2cf, type: 3}
       propertyPath: runSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -2888676044745662853, guid: d22d9e093892d7b4b90e9351acc6a2cf, type: 3}
       propertyPath: speedIncreaseAmount
@@ -20057,6 +20057,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5026233568606731496, guid: d8497fe295479be4da09fb6bc2974a69, type: 3}
+      propertyPath: gravity
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5026233568606731496, guid: d8497fe295479be4da09fb6bc2974a69, type: 3}
+      propertyPath: jumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -5026233568606731496, guid: d8497fe295479be4da09fb6bc2974a69, type: 3}
+      propertyPath: speedIncreaseAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5026233568606731496, guid: d8497fe295479be4da09fb6bc2974a69, type: 3}
+      propertyPath: speedIncreaseInterval
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6076336612733015529, guid: d8497fe295479be4da09fb6bc2974a69, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.11
