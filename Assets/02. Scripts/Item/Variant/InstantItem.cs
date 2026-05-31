@@ -8,5 +8,13 @@ namespace ShiftRunner.Item {
 
             OnUsed();
         }
+
+        public sealed override void OnUsed() {
+            base.OnUsed();
+
+            UseEffect();
+        }
+
+        protected abstract void UseEffect();
     }
 }

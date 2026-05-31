@@ -5,5 +5,6 @@ namespace ShiftRunner.Item {
         void OnCollected(IItemCollector collector);
         void OnTick(float deltaTime);
         void OnUsed();
+        void Release();
     }
 }
