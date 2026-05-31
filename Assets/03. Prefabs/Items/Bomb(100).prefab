@@ -97,6 +97,10 @@ PrefabInstance:
       value: Bomb(100)
       objectReference: {fileID: 0}
     - target: {fileID: 9021979860543945138, guid: e02b31792a067c74a81e275fcda3930b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021979860543945138, guid: e02b31792a067c74a81e275fcda3930b, type: 3}
       propertyPath: m_TagString
       value: Item
       objectReference: {fileID: 0}
@@ -131,7 +135,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -150,4 +154,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShiftRunner.Item.BombBehaviour
   _data: {fileID: 11400000, guid: eb99fea4d2ee20d41a41ed6ebc5f9417, type: 2}
-  damage: 100
+  damage: 300
+  explosionEffectPrefab: {fileID: 2526731434147544561, guid: 5f1ddf6b1d83fd84c82506a498966273, type: 3}
