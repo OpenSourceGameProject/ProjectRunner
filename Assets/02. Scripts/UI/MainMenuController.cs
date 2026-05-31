@@ -13,12 +13,14 @@ public class MainMenuController : MonoBehaviour
     // [BlackQuitButton] 누르면 실행될 함수
     public void OnClickQuit()
     {
-#if UNITY_EDITOR
-        // 유니티 에디터에서 테스트할 때 잘 눌렸는지 콘솔창에 띄워줍니다.
         Debug.Log("게임 종료 버튼이 클릭되었습니다.");
-#else
-        // 실제 게임을 빌드해서 출시했을 때 게임이 꺼집니다.
+
+        // 1. 실제 빌드된 게임(.exe 파일 등)이 완전히 꺼지는 코드
         Application.Quit();
-#endif
+
+        // 2. [추가] 유니티 에디터에서도 재생(▶) 버튼이 탁 꺼지게 만드는 코드
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }

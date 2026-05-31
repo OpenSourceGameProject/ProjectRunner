@@ -76,4 +76,19 @@ public class PauseMenuController : MonoBehaviour
         // 현재 열려있는 씬(UI_MergedScene)의 이름을 가져와서 처음부터 다시 로드!
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    // 시작 화면에서 Quit 버튼을 눌렀을 때 작동하는 함수
+    public void ClickQuitButton()
+    {
+        Debug.Log("게임 종료 버튼 클릭됨!");
+
+        // 1. 실제 빌드된 게임(PC, 모바일 등)에서 완전 종료시키는 코드
+        Application.Quit();
+
+        // 2. [추가 꿀팁] 유니티 에디터 창에서 재생(▶) 버튼을 자동으로 꺼지게 만드는 코드
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
+
 }
