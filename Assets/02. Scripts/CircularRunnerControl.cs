@@ -8,6 +8,15 @@ public class CircularRunnerController : MonoBehaviour
     public float[] trackRadii = { 8f, 10f, 12f };
     public int startingTrackIndex = 1;
 
+    //mergescenecheckcolor에서 변경
+    [Header("트랙 색상 설정")]
+    public TrackColorType[] trackColors =
+    {
+        TrackColorType.Red,
+        TrackColorType.Green,
+        TrackColorType.Blue
+    };
+
     [Header("이동 속도")]
     public float runSpeed = 60f;
     public float laneSwitchSpeed = 10f;
@@ -19,6 +28,21 @@ public class CircularRunnerController : MonoBehaviour
     // [추가된 코드] 슬라이드 지속 시간 (인스펙터에서 조절 가능)
     [Tooltip("슬라이드 애니메이션이 유지되는 시간(초)입니다.")]
     public float slideDuration = 1.0f;
+
+    //mergescenecheckcolor에서 변경
+    public int CurrentTrackIndex => currentTrackIndex;
+    //mergescenecheckcolor에서 변경
+    public TrackColorType CurrentTrackColor
+    {
+        get
+        {
+            if (trackColors == null || trackColors.Length == 0)
+                return TrackColorType.Green;
+
+            int index = Mathf.Clamp(currentTrackIndex, 0, trackColors.Length - 1);
+            return trackColors[index];
+        }
+    }
 
     private int currentTrackIndex;
     private float currentRadius;
