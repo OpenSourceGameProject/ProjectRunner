@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace ShiftRunner.Item {
     [RequireComponent(typeof(Collider))]
@@ -8,7 +10,10 @@ namespace ShiftRunner.Item {
         private int capacity = 1;
         
         private readonly List<IItem> _items = new();
+        private readonly List<IItem> _usedItems = new();
         public IReadOnlyList<IItem> Items => _items;
+
+        public event Action<IItemCollector> OnItemChanged;
 
         public void Use(IItem item) {
             if (!_items.Contains(item)) {
@@ -16,6 +21,11 @@ namespace ShiftRunner.Item {
             }
 
             item.OnUsed();
+            
+            _items.Remove(item);
+            _usedItems.Add(item);
+
+            OnItemChanged?.Invoke(this);
             EnsureOnlyValidItems();
         }
 
@@ -29,11 +39,12 @@ namespace ShiftRunner.Item {
             }
 
             _items.Add(item);
+            OnItemChanged?.Invoke(this);
             EnsureOnlyValidItems();
         }
 
         private void OnTriggerEnter(Collider other) {
-            if (other.CompareTag(Item.Tag)) return;
+            if (!other.CompareTag(Item.Tag)) return;
             if (!other.TryGetComponent(out ItemBehaviour itemObject)) {
                 // why?
 
@@ -48,7 +59,7 @@ namespace ShiftRunner.Item {
                 return;
             }
 
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) {
                 Use(_items[0]);
             }
         }
@@ -58,6 +69,10 @@ namespace ShiftRunner.Item {
 
             float deltaTime = Time.deltaTime;
             foreach (var item in _items) {
+                item.OnTick(deltaTime);
+            }
+
+            foreach (var item in _usedItems) {
                 item.OnTick(deltaTime);
             }
         }
@@ -72,6 +87,14 @@ namespace ShiftRunner.Item {
                 }
 
                 _items.RemoveAt(i);
+            }
+
+            for (int i = _usedItems.Count - 1; i >= 0; i--) {
+                if (_usedItems[i] is not null and { Data: not null }) {
+                    continue;
+                }
+
+                _usedItems.RemoveAt(i);
             }
         }
     }

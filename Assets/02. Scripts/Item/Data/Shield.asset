@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837932c6037d91849ba3e1c47f2d909f, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: Assembly-CSharp::ShiftRunner.Item.ItemData
+  <Icon>k__BackingField: {fileID: 21300000, guid: 3ecfd9b60ba7fbb4293d64d41ca403da, type: 3}
   <DisplayName>k__BackingField: "\uBCF4\uD638\uB9C9"
   <Type>k__BackingField: 2

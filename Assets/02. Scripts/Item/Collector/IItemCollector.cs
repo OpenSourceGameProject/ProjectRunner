@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace ShiftRunner.Item {
@@ -5,5 +6,6 @@ namespace ShiftRunner.Item {
         IReadOnlyList<IItem> Items { get; }
         void Use(IItem item);
         void Store(IItem item);
+        event Action<IItemCollector> OnItemChanged;
     }
 }
