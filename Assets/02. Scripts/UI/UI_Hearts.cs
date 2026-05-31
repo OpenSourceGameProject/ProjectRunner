@@ -41,6 +41,14 @@ public class UI_Hearts : MonoBehaviour
                 Debug.Log("💀 GAME OVER! 목숨을 모두 잃었습니다.");
                 // 게임 오버 창 띄우는 코드
 
+                // [추가] 하이라키에 있는 PauseMenuController를 찾아서 게임 오버 창을 띄웁니다.
+                // 씬에 하나만 존재하는 매니저이므로 FindObjectOfType으로 쉽게 찾을 수 있습니다.
+                PauseMenuController pauseManager = FindObjectOfType<PauseMenuController>();
+                if (pauseManager != null)
+                {
+                    pauseManager.ShowGameOver();
+                }
+
                 // 시간에 따른 스코어 자동 증가를 멈춤
                 if (UI_Score.Instance != null)
                 {

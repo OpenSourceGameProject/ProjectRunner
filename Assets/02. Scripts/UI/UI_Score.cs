@@ -75,4 +75,11 @@ public class UI_Score : MonoBehaviour
     {
         isGameActive = false;
     }
+
+    // [추가] 최고 점수 기능 -> 에러처리
+    public int GetScore()
+    {
+        // 소수점 버림 처리(Mathf.FloorToInt)해서 정수로 깔끔하게 돌려줍니다.
+        return Mathf.FloorToInt(currentScore);
+    }
 }
