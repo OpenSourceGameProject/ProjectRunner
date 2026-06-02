@@ -5,7 +5,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("UI_MergedScene");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void OnClickQuit()

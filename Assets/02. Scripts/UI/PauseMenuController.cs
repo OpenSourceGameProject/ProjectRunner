@@ -2,12 +2,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class PauseMenuController : MonoBehaviour
 {
     public GameObject pausePanel;
     public GameObject gameOverPanel;
     public TextMeshProUGUI highScoreText;
+
+    private void Update() {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame) {
+            if (pausePanel.activeSelf) {
+                ClickResumeButton();
+            } else {
+                ClickPauseButton();
+            }
+        }
+    }
 
     public void ClickPauseButton()
     {
@@ -20,11 +31,13 @@ public class PauseMenuController : MonoBehaviour
         pausePanel.SetActive(false); 
         Time.timeScale = 1f; 
     }
+
     public void ClickHomeButton()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("StartScene");
     }
+
     public void ShowGameOver()
     {
         gameOverPanel.SetActive(true); 
