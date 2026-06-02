@@ -4,7 +4,7 @@ using TMPro;
 public class ColorLaneJudgeSystem : MonoBehaviour
 {
     [Header("References")]
-    public CircularRunnerController player;
+    public CircularRunnerControl player;
     public BossMaterialAura bossAura;
 
     [Header("Judge Settings")]
@@ -30,7 +30,7 @@ public class ColorLaneJudgeSystem : MonoBehaviour
     private void Start()
     {
         if (player == null)
-            player = FindAnyObjectByType<CircularRunnerController>();
+            player = FindAnyObjectByType<CircularRunnerControl>();
 
         if (bossAura == null)
             bossAura = FindAnyObjectByType<BossMaterialAura>();

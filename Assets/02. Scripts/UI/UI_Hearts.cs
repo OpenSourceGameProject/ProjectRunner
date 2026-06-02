@@ -34,15 +34,7 @@ public class UI_Hearts : MonoBehaviour
                 hearts[currentHearts].gameObject.SetActive(false);
             }
 
-            Debug.Log($"💔 하트가 감소했습니다! 남은 하트: {currentHearts}");
-
-            if (currentHearts <= 0) // 하트 수가 0 이하가 된다면 (=게임오버)
-            {
-                Debug.Log("💀 GAME OVER! 목숨을 모두 잃었습니다.");
-                // 게임 오버 창 띄우는 코드
-
-                // [추가] 하이라키에 있는 PauseMenuController를 찾아서 게임 오버 창을 띄웁니다.
-                // 씬에 하나만 존재하는 매니저이므로 FindObjectOfType으로 쉽게 찾을 수 있습니다.
+            if (currentHearts <= 0) {
                 PauseMenuController pauseManager = FindObjectOfType<PauseMenuController>();
                 if (pauseManager != null)
                 {

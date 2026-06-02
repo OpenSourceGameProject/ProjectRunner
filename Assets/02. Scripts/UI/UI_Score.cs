@@ -29,8 +29,6 @@ public class UI_Score : MonoBehaviour
 
     private void Start()
     {
-        // 🌟 지현님 피드백 반영: UI_Score 오브젝트 자체가 텍스트이므로 
-        // 인스펙터에서 비어있다면 내 몸통에 붙은 TextMeshProUGUI를 자동으로 가져옵니다.
         if (scoreText == null)
         {
             scoreText = GetComponent<TextMeshProUGUI>();
@@ -55,12 +53,9 @@ public class UI_Score : MonoBehaviour
     {
         if (scoreText != null)
         {
-            // 소수점 떼고 정수로 변환해서 "Score : 12" 형태로 출력
             scoreText.text = "Score : " + Mathf.FloorToInt(currentScore).ToString();
         }
     }
-
-    // [나중에 쓸 기능] 아이템 먹었을 때 점수 추가해주는 함수
     public void AddScore(int amount)
     {
         if (isGameActive)
@@ -69,8 +64,6 @@ public class UI_Score : MonoBehaviour
             UpdateScoreText();
         }
     }
-
-    // [나중에 쓸 기능] 플레이어 체력 다 깎여서 죽었을 때 점수 멈추는 함수
     public void StopScore()
     {
         isGameActive = false;
@@ -79,7 +72,6 @@ public class UI_Score : MonoBehaviour
     // [추가] 최고 점수 기능 -> 에러처리
     public int GetScore()
     {
-        // 소수점 버림 처리(Mathf.FloorToInt)해서 정수로 깔끔하게 돌려줍니다.
         return Mathf.FloorToInt(currentScore);
     }
 }
