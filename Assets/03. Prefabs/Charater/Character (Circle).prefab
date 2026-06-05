@@ -98,9 +98,13 @@ MonoBehaviour:
   - 10
   - 12
   startingTrackIndex: 1
+  trackColors: 000000000100000002000000
   runSpeed: 30
   laneSwitchSpeed: 10
-  jumpForce: 6
+  speedIncreaseInterval: 30
+  speedIncreaseAmount: 5
+  maxSpeed: 120
+  jumpForce: 20
   gravity: -15
   slideDuration: 1
 --- !u!95 &-3749598660783971307
