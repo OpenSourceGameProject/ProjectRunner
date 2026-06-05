@@ -3,51 +3,51 @@ using UnityEngine.UI;
 
 public class UI_Hearts : MonoBehaviour
 {
-    // 어디서나 이 하트 시스템에 접근할 수 있게 만드는 싱글톤(치트키) 설정
+    // 어디서나 이 하트 시스템에 접근할 수 있게 만드는 싱글톤을 설정합니다.
     public static UI_Hearts Instance { get; private set; }
 
-    // 유니티 인스펙터에서 꽂아줄 하트 이미지 5개 배열
+    // 유니티 인스펙터에서 꽂아줄 하트 이미지 5개를 배열합니다.
     public Image[] hearts;
 
-    // 현재 남아있는 하트 개수 (처음엔 5개로 시작)
+    // 현재 남아있는 하트 개수입니다.
     private int currentHearts;
 
     private void Awake()
     {
-        // 싱글톤 초기화
+        // 싱글톤을 초기화시킵니다.
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        currentHearts = hearts.Length; // 하트 개수를 5개로 세팅
+        currentHearts = hearts.Length; // 하트 개수를 5개로 세팅합니다.
     }
 
-    // 플레이어가 장애물에 부딪히면 호출될 함수 (하트 하나씩 끄기)
+    // 플레이어가 장애물에 부딪히면 호출될 함수입니다.
     public void TakeDamage()
     {
         if (currentHearts > 0)
         {
-            currentHearts--; // 하트 개수 1 감소
+            currentHearts--;
 
-            // 감소된 인덱스에 있는 하트 오브젝트를 화면에서 비활성화(끄기)
+            // 감소된 인덱스에 있는 하트 오브젝트를 화면에서 끕니다.
             if (hearts[currentHearts] != null)
             {
                 hearts[currentHearts].gameObject.SetActive(false);
             }
-
-            if (currentHearts <= 0) {
-                PauseMenuController pauseManager = FindObjectOfType<PauseMenuController>();
+            if (currentHearts <= 0)
+            {
+                PauseMenuController pauseManager = FindAnyObjectByType<PauseMenuController>();
                 if (pauseManager != null)
                 {
                     pauseManager.ShowGameOver();
                 }
 
-                // 시간에 따른 스코어 자동 증가를 멈춤
+                // 시간에 따른 스코어 자동 증가를 멈춥니다.
                 if (UI_Score.Instance != null)
                 {
                     UI_Score.Instance.StopScore();
                 }
 
-                // 유니티 전체 시간을 0으로 만들어서 게임의 물리/스폰/움직임을 모두 멈춤
+                // 유니티 전체 시간을 0으로 만들어서 게임의 물리/스폰/움직임을 모두 멈춥니다.
                 Time.timeScale = 0f;
             }
         }

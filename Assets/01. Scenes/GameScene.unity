@@ -8046,6 +8046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6108332449360923522, guid: 1b600b412d2ea8f47938ec1e9d48a3c0, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6595509757485632049, guid: 1b600b412d2ea8f47938ec1e9d48a3c0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
