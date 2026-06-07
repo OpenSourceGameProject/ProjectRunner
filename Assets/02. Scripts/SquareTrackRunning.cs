@@ -3,20 +3,38 @@ using UnityEngine.InputSystem;
 
 public class SquareTrackRunning : MonoBehaviour
 {
+    [Header("시작 위치 및 차선 설정 (겹침 방지)")]
+    public float startDistanceOffset = 0f;
+    [Range(0, 2)]
+    public int startingLane = 1;
+
     [Header("이동 및 차선 설정")]
     public float runSpeed = 15f;
     public float laneSwitchSpeed = 10f;
     public float laneWidth = 1.5f;
+
+    // --- [새로 추가된 속도 증가 시스템] ---
+    [Header("자동 속도 증가 시스템")]
+    [Tooltip("몇 초마다 속도를 증가시킬지 설정합니다. (현재 30초)")]
+    public float speedIncreaseInterval = 30f;
+
+    [Tooltip("지정된 시간이 될 때마다 증가할 속도량입니다.")]
+    public float speedIncreaseAmount = 2f;
+
+    [Tooltip("도달할 수 있는 최대 속도 제한입니다. (물리 버그 방지)")]
+    public float maxSpeed = 35f;
+
+    private float speedTimer = 0f; // 시간을 잴 내부 타이머
+    // -------------------------------------
 
     [Header("점프 및 슬라이드 설정")]
     public float jumpForce = 6f;
     public float gravity = -15f;
     public float slideDuration = 1.0f;
 
-    // 인스펙터에서 넣을 필요가 없으므로 private으로 변경하여 숨깁니다.
     private Transform[] waypoints = new Transform[4];
 
-    private int currentLane = 1;
+    private int currentLane;
     private float currentLaneOffset = 0f;
     private float distanceAlongPerimeter = 0f;
     private Animator animator;
@@ -35,10 +53,12 @@ public class SquareTrackRunning : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        // [추가된 코드] 프리팹을 위해 씬에서 Waypoint1 ~ 4를 이름으로 직접 찾습니다.
+        currentLane = startingLane;
+        currentLaneOffset = (currentLane - 1) * laneWidth;
+        distanceAlongPerimeter = startDistanceOffset;
+
         for (int i = 0; i < 4; i++)
         {
-            // Waypoint1, Waypoint2, Waypoint3, Waypoint4 이름을 차례대로 검색
             string waypointName = "Waypoint" + (i + 1);
             GameObject wp = GameObject.Find(waypointName);
 
@@ -48,15 +68,11 @@ public class SquareTrackRunning : MonoBehaviour
             }
             else
             {
-                Debug.LogError("씬에서 '" + waypointName + "' 오브젝트를 찾을 수 없습니다! 하이어라키 창의 이름을 확인해주세요.");
+                Debug.LogError("씬에서 '" + waypointName + "' 오브젝트를 찾을 수 없습니다!");
             }
         }
 
-        // 웨이포인트를 하나라도 못 찾았다면 작동을 중지합니다.
-        if (waypoints[0] == null || waypoints[1] == null || waypoints[2] == null || waypoints[3] == null)
-        {
-            return;
-        }
+        if (waypoints[0] == null || waypoints[1] == null || waypoints[2] == null || waypoints[3] == null) return;
 
         baseY = transform.position.y;
 
@@ -78,13 +94,36 @@ public class SquareTrackRunning : MonoBehaviour
 
     void Update()
     {
-        // 웨이포인트가 없으면 에러 방지를 위해 업데이트를 넘깁니다.
         if (waypoints[0] == null || waypoints[1] == null || waypoints[2] == null || waypoints[3] == null) return;
 
         HandleInput();
         HandleSlideTimer();
+        HandleSpeedIncrease(); // [새로 추가된 함수 호출] 매 프레임 시간을 체크합니다.
         MovePlayer();
     }
+
+    // --- [새로 추가된 함수] 속도 증가 타이머 계산 ---
+    private void HandleSpeedIncrease()
+    {
+        // 최대 속도에 도달했다면 더 이상 타이머를 계산하지 않습니다.
+        if (runSpeed >= maxSpeed) return;
+
+        speedTimer += Time.deltaTime; // 매 프레임마다 실제 흐른 시간을 누적합니다.
+
+        // 누적된 시간이 우리가 설정한 간격(예: 30초)을 넘었다면
+        if (speedTimer >= speedIncreaseInterval)
+        {
+            speedTimer = 0f; // 타이머를 다시 0으로 초기화
+            runSpeed += speedIncreaseAmount; // 속도 증가!
+
+            // 만약 증가한 속도가 최대 속도를 넘었다면, 최대 속도로 고정
+            runSpeed = Mathf.Min(runSpeed, maxSpeed);
+
+            // 유니티 콘솔창에서 속도가 잘 오르는지 확인하기 위한 로그 (필요 없으면 지우셔도 됩니다)
+            Debug.Log("속도 증가! 현재 속도: " + runSpeed);
+        }
+    }
+    // ------------------------------------------------
 
     private void HandleInput()
     {

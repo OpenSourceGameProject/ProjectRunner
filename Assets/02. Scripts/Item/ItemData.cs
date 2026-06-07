@@ -4,6 +4,9 @@ namespace ShiftRunner.Item {
     [CreateAssetMenu(menuName = "Game/Item Data")]
     public class ItemData : ScriptableObject {
         [field: SerializeField]
+        public Sprite Icon { get; private set; }
+
+        [field: SerializeField]
         public string DisplayName { get; private set; }
 
         [field: SerializeField]

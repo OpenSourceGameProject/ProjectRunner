@@ -1,24 +1,59 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CircularRunnerController : MonoBehaviour
+public class CircularRunnerControl : MonoBehaviour
 {
     [Header("트랙 설정")]
     public Transform trackCenter;
     public float[] trackRadii = { 8f, 10f, 12f };
     public int startingTrackIndex = 1;
 
+    //mergescenecheckcolor에서 변경
+    [Header("트랙 색상 설정")]
+    public TrackColorType[] trackColors =
+    {
+        TrackColorType.Red,
+        TrackColorType.Green,
+        TrackColorType.Blue
+    };
+
     [Header("이동 속도")]
     public float runSpeed = 60f;
     public float laneSwitchSpeed = 10f;
 
+    // --- [새로 추가된 속도 증가 시스템] ---
+    [Header("자동 속도 증가 시스템")]
+    [Tooltip("몇 초마다 속도를 증가시킬지 설정합니다. (현재 30초)")]
+    public float speedIncreaseInterval = 30f;
+
+    [Tooltip("지정된 시간이 될 때마다 증가할 속도량입니다.")]
+    public float speedIncreaseAmount = 5f;
+
+    [Tooltip("도달할 수 있는 최대 속도 제한입니다. (원형 트랙 기준)")]
+    public float maxSpeed = 120f;
+
+    private float speedTimer = 0f; // 시간을 잴 내부 타이머
+    // -------------------------------------
+
     [Header("점프 및 슬라이드 설정")]
     public float jumpForce = 6f;
     public float gravity = -15f;
-
-    // [추가된 코드] 슬라이드 지속 시간 (인스펙터에서 조절 가능)
-    [Tooltip("슬라이드 애니메이션이 유지되는 시간(초)입니다.")]
     public float slideDuration = 1.0f;
+
+    //mergescenecheckcolor에서 변경
+    public int CurrentTrackIndex => currentTrackIndex;
+    //mergescenecheckcolor에서 변경
+    public TrackColorType CurrentTrackColor
+    {
+        get
+        {
+            if (trackColors == null || trackColors.Length == 0)
+                return TrackColorType.Green;
+
+            int index = Mathf.Clamp(currentTrackIndex, 0, trackColors.Length - 1);
+            return trackColors[index];
+        }
+    }
 
     private int currentTrackIndex;
     private float currentRadius;
@@ -29,8 +64,6 @@ public class CircularRunnerController : MonoBehaviour
     private float verticalVelocity = 0f;
     private float baseY;
     private bool isJumping = false;
-
-    // [추가된 코드] 슬라이드 상태 및 타이머 변수
     private bool isSliding = false;
     private float slideTimer = 0f;
 
@@ -44,16 +77,14 @@ public class CircularRunnerController : MonoBehaviour
         // 인스펙터 창에서 trackCenter가 연결되어 있지 않다면(None), 씬에서 이름으로 자동 검색합니다.
         if (trackCenter == null)
         {
-            // 하이어라키 창에 설정하신 이름인 "CircleCenter"로 정확하게 찾아옵니다.
             GameObject centerObject = GameObject.Find("CircleCenter");
-
             if (centerObject != null)
             {
                 trackCenter = centerObject.transform;
             }
             else
             {
-                Debug.LogError("씬에서 'CircleCenter'라는 이름의 오브젝트를 찾을 수 없습니다! 오타가 없는지 확인해주세요.");
+                Debug.LogError("씬에서 'CircleCenter'라는 이름의 오브젝트를 찾을 수 없습니다!");
             }
         }
 
@@ -69,9 +100,32 @@ public class CircularRunnerController : MonoBehaviour
         if (trackCenter == null) return;
 
         HandleInput();
-        HandleSlideTimer(); // [추가된 코드] 슬라이드 시간을 계산하는 함수 호출
+        HandleSlideTimer();
+        HandleSpeedIncrease(); // [새로 추가된 함수 호출] 매 프레임 시간을 체크합니다.
         MovePlayer();
     }
+
+    // --- [새로 추가된 함수] 원형 트랙 속도 증가 타이머 계산 ---
+    private void HandleSpeedIncrease()
+    {
+        // 최대 속도에 도달했다면 더 이상 타이머를 계산하지 않습니다.
+        if (runSpeed >= maxSpeed) return;
+
+        speedTimer += Time.deltaTime; // 매 프레임마다 실제 흐른 시간을 누적합니다.
+
+        // 누적된 시간이 설정한 간격(예: 30초)을 넘었다면
+        if (speedTimer >= speedIncreaseInterval)
+        {
+            speedTimer = 0f; // 타이머 초기화
+            runSpeed += speedIncreaseAmount; // 속도 증가!
+
+            // 증가한 속도가 최대 속도를 넘지 않도록 제한
+            runSpeed = Mathf.Min(runSpeed, maxSpeed);
+
+            Debug.Log("원형 트랙 캐릭터 속도 증가! 현재 속도: " + runSpeed);
+        }
+    }
+    // --------------------------------------------------------
 
     private void HandleInput()
     {
@@ -88,42 +142,31 @@ public class CircularRunnerController : MonoBehaviour
         }
         currentTrackIndex = Mathf.Clamp(currentTrackIndex, 0, trackRadii.Length - 1);
 
-        // 2. 점프 (W 키) - 점프 중이거나 슬라이드 중일 때는 뛰지 못하게 막음
+        // 2. 점프 (W 키)
         if (Keyboard.current.wKey.wasPressedThisFrame && !isJumping && !isSliding)
         {
             isJumping = true;
             verticalVelocity = jumpForce;
-
-            if (animator != null)
-            {
-                animator.SetTrigger("Jump");
-            }
+            if (animator != null) animator.SetTrigger("Jump");
         }
 
-        // 3. [추가된 코드] 슬라이드 (S 키) - 땅에 있고 슬라이드 중이 아닐 때만 작동
+        // 3. 슬라이드 (S 키)
         if (Keyboard.current.sKey.wasPressedThisFrame && !isJumping && !isSliding)
         {
-            isSliding = true;                   // 슬라이드 상태 켜기
-            slideTimer = slideDuration;         // 타이머에 지속 시간 충전
-
-            // 애니메이터에 설정한 Slide 트리거 방아쇠를 당깁니다.
-            if (animator != null)
-            {
-                animator.SetTrigger("Slide");
-            }
+            isSliding = true;
+            slideTimer = slideDuration;
+            if (animator != null) animator.SetTrigger("Slide");
         }
     }
 
-    // [추가된 코드] 시간이 흐르면 슬라이드 상태를 풀어주는 함수
     private void HandleSlideTimer()
     {
         if (isSliding)
         {
-            slideTimer -= Time.deltaTime; // 매 프레임마다 시간을 깎음
-
+            slideTimer -= Time.deltaTime;
             if (slideTimer <= 0)
             {
-                isSliding = false; // 시간이 다 되면 슬라이드 상태 해제
+                isSliding = false;
             }
         }
     }
@@ -133,25 +176,25 @@ public class CircularRunnerController : MonoBehaviour
         currentAngle += runSpeed * Time.deltaTime;
         currentRadius = Mathf.Lerp(currentRadius, trackRadii[currentTrackIndex], Time.deltaTime * laneSwitchSpeed);
 
+        // Y축 부양 방지 철통 방어 로직 적용
+        float newY = baseY;
+
         if (isJumping)
         {
             verticalVelocity += gravity * Time.deltaTime;
-        }
+            newY = transform.position.y + verticalVelocity * Time.deltaTime;
 
-        float newY = transform.position.y + verticalVelocity * Time.deltaTime;
-
-        if (newY <= baseY)
-        {
-            if (isJumping)
+            if (newY <= baseY)
             {
-                if (animator != null)
-                {
-                    animator.SetTrigger("Land");
-                }
+                if (animator != null) animator.SetTrigger("Land");
+                newY = baseY;
+                isJumping = false;
+                verticalVelocity = 0f;
             }
-
+        }
+        else
+        {
             newY = baseY;
-            isJumping = false;
             verticalVelocity = 0f;
         }
 

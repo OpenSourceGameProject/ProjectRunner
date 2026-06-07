@@ -5,8 +5,12 @@ namespace ShiftRunner.Item {
         [SerializeField]
         private float duration = 1f;
 
+        [SerializeField]
+        private GameObject effectPrefab;
+
         protected override void Initialize(ShieldItem item) {
             item.Duration = duration;
+            item.EffectPrefab = effectPrefab;
         }
     }
 }
